@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #070707;
+  --black: #070707;
+  --white: #ffffff;
+  --white-12: rgba(255, 255, 255, 0.12);
+  --white-22: rgba(255, 255, 255, 0.22);
+  --white-60: rgba(255, 255, 255, 0.60);
+  --primary: rgb(0, 81, 255);
+  --h1-fs: 32px;
+  --h2-fs: 22px;
+  --link-fs: 14px;
+  --button-fs: 14px;
+  --p-fs: 14px;
+  --bullet-fs: 12px;
+  --txt-fs: 12px;
+  --misc-fs: 42px;
+  --contact-fs: 18px;
+  --contact-email-fs: 24px;
+}
+
+body {
+  background-color: var(--bg);
+  overflow-x: hidden;
+  color: var(--white);
+  font-family: "Inter Tight", sans-serif;
+  font-size: 14px;
+  scroll-behavior: smooth;
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Inter", sans-serif;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+li {
+  list-style: none;
+}
+img {
+  user-drag: none;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+button {
+  background: none;
+  color: var(--white);
+  border: none;
+  font-family: "Inter", sans-serif;
+}
+input {
+  font-family: "Inter", sans-serif;
+}
+.italic {
+  font-style: italic;
+}
