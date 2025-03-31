@@ -1,10 +1,14 @@
-import React from 'react'
-import Landing from '../components/home/Landing'
+import React from "react";
+import Landing from "../components/home/Landing";
+import AboutEntangle from "../components/home/AboutEntangle";
 
 function Home() {
   return (
-    <Landing />
-  )
+    <>
+      <Landing />
+      <AboutEntangle />
+    </>
+  );
 }
 
-export default Home
+export default Home;

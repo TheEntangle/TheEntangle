@@ -6,6 +6,9 @@
     padding: 2rem 5rem;
     z-index: 1000;
     /* background-color: red; */
+    background: var(--black-10);
+    backdrop-filter: blur(20px);
+    border-bottom: 1px solid var(--white-10);
 }
 .nav_links{
     display: flex;
