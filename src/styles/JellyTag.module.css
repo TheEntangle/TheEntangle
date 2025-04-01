@@ -1,0 +1,33 @@
+.jelly_tag {
+  font-weight: 200;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  position: relative;
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: linear-gradient(180deg, #0e0f10 0%, #000819 100%);
+}
+.dot {
+  --size: 5px;
+  width: var(--size);
+  height: var(--size);
+  background-color: var(--white);
+  border-radius: 100%;
+}
+.jelly_tag::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 81, 255, 0) 0%,
+    #0051ff 50%,
+    rgba(0, 81, 255, 0) 100%
+  );
+}

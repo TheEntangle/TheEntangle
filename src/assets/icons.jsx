@@ -52,3 +52,68 @@ export const verified = (
     />
   </svg>
 );
+export const shine = (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="200"
+    height="201"
+    viewBox="0 0 200 201"
+    fill="none"
+  >
+    <g clip-path="url(#clip0_10_2)">
+      <path
+        d="M29.643 29.436L171.064 170.857L170.357 171.564L28.9359 30.1431L29.643 29.436Z"
+        fill="url(#paint0_linear_10_2)"
+      />
+      <path
+        d="M100.5 0.5L100.5 200.5H99.5L99.5 0.5L100.5 0.5Z"
+        fill="url(#paint1_linear_10_2)"
+      />
+      <path
+        d="M200 101L0 101V100L200 100V101Z"
+        fill="url(#paint2_linear_10_2)"
+      />
+    </g>
+    <defs>
+      <linearGradient
+        id="paint0_linear_10_2"
+        x1="-4.46641"
+        y1="-3.9663"
+        x2="216.465"
+        y2="216.965"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="white" stop-opacity="0" />
+        <stop offset="0.5" stop-color="white" stop-opacity="0.2" />
+        <stop offset="1" stop-color="white" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="paint1_linear_10_2"
+        x1="100"
+        y1="-47.238"
+        x2="100"
+        y2="265.206"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="white" stop-opacity="0" />
+        <stop offset="0.5" stop-color="white" stop-opacity="0.2" />
+        <stop offset="1" stop-color="white" stop-opacity="0" />
+      </linearGradient>
+      <linearGradient
+        id="paint2_linear_10_2"
+        x1="247.738"
+        y1="100.5"
+        x2="-64.706"
+        y2="100.5"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="white" stop-opacity="0" />
+        <stop offset="0.5" stop-color="white" stop-opacity="0.2" />
+        <stop offset="1" stop-color="white" stop-opacity="0" />
+      </linearGradient>
+      <clipPath id="clip0_10_2">
+        <rect width="200" height="201" fill="white" />
+      </clipPath>
+    </defs>
+  </svg>
+);

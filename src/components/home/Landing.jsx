@@ -3,6 +3,7 @@ import styles from "../../styles/home/Landing.module.css";
 import landing_video from "../../assets/landing_bg.mp4";
 import clients_img from "../../assets/clients_strip.webp";
 import hero_img from "../../assets/nitika_mam.webp";
+import { shine } from "../../assets/icons";
 
 function Landing() {
   return (
@@ -50,6 +51,7 @@ function Landing() {
       </div>
       <div className={styles.c2}>
         <div className={styles.img_ctr}>
+          {shine}
           <img className={styles.hero_image} src={hero_img} alt="" />
           <div className={styles.blur}></div>
         </div>

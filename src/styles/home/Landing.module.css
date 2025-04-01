@@ -48,6 +48,13 @@
   max-width: 440px;
   color: var(--white-60);
 }
+.img_ctr svg {
+  width: 150px;
+  position: absolute;
+  top: -110px;
+  left: -84px;
+  z-index: 100;
+}
 .img_ctr {
   position: relative;
   height: auto;
@@ -108,13 +115,13 @@
   animation: blue-animation 5s infinite ease;
 }
 @keyframes blue-animation {
-  0%{
+  0% {
     height: 50px;
   }
-  50%{
+  50% {
     height: 30px;
   }
-  100%{
+  100% {
     height: 50px;
   }
 }
