@@ -16,6 +16,11 @@
   --white-22: rgba(255, 255, 255, 0.22);
   --white-60: rgba(255, 255, 255, 0.60);
   --primary: #0051ff;
+  --primary-80: rgb(0, 81, 255, 0.80);
+  --primary-70: rgb(0, 81, 255, 0.70);
+  --primary-50: rgb(0, 81, 255, 0.50);
+  --primary-20: rgb(0, 81, 255, 0.20);
+  --primary-10: rgb(0, 81, 255, 0.10);
   --h1-fs: 32px;
   --h2-fs: 22px;
   --link-fs: 14px;

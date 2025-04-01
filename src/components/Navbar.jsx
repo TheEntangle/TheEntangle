@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "../styles/Navbar.module.css"
 
+import PrimaryBtn from "./PrimaryBtn"
+
 function Navbar() {
   return (
     <nav className={styles.navbar}>
@@ -14,7 +16,7 @@ function Navbar() {
             {/* <li><a href="#">Contact</a></li> */}
         </ul>
         <div className={styles.cta_ctr}>
-            <a href="#" className={styles.cta_btn}>Contact Us</a>
+          <PrimaryBtn title="Contact us"/>
         </div>
     </nav>
   )
