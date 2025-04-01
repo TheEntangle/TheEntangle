@@ -1,9 +1,12 @@
 import React from "react";
 import styles from "../../styles/home/AboutEntangle.module.css";
+import { point } from "../../assets/icons";
+
+import PrimaryBtn from "../PrimaryBtn";
 
 function AboutEntangle() {
   return (
-    <section>
+    <section className={styles.aboutentangle_section}>
       <div className={styles.c1}>
         <img
           className={styles.image}
@@ -11,20 +14,40 @@ function AboutEntangle() {
           alt=""
         />
       </div>
+
       <div className={styles.c2}>
-        <span className={styles.jelly_tag}>About Entangle</span>
-        <p>
+        <span className={styles.jelly_tag}>
+          <div className={styles.dot}></div>About Entangle
+        </span>
+        <p className={styles.paragraph}>
           We are committed to shaping future leaders by fostering creativity,
           enhancing skills, and providing a platform for growth and success.
         </p>
-        <ul>
-          <li>A roadmap to growth and success.</li>
-          <li>Delivering cutting-edge solutions with innovation.</li>
-          <li>Bringing together thought leaders and innovators.</li>
-          <li>Encouraging knowledge-sharing and collaboration.</li>
-          <li>Bridging the gap between learning and real-world success.</li>
+        <ul className={styles.list}>
+          <li>
+            {point}
+            <span>A roadmap to growth and success.</span>
+          </li>
+          <li>
+            {point}
+            <span>Delivering cutting-edge solutions with innovation.</span>
+          </li>
+          <li>
+            {point}
+            <span>Bringing together thought leaders and innovators.</span>
+          </li>
+          <li>
+            {point}
+            <span>Encouraging knowledge-sharing and collaboration.</span>
+          </li>
+          <li>
+            {point}
+            <span>
+              Bridging the gap between learning and real-world success.
+            </span>
+          </li>
         </ul>
-        <a href="" className={styles.primary_btn}>View About Entangle</a>
+        <PrimaryBtn title="View About Entangle" />
       </div>
     </section>
   );

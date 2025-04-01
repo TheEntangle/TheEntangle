@@ -1,0 +1,13 @@
+.cta_btn {
+  background: var(--primary);
+  font-size: 14px;
+  color: var(--white);
+  padding: 12px 15px;
+  font-weight: 400;
+  border-radius: 10px;
+  transition: box-shadow 300ms ease-in-out;
+}
+.cta_btn:hover {
+  box-shadow: 0 0 10px var(--primary), 0 0 50px var(--primary),
+    inset 0 0 5px var(--white);
+}
