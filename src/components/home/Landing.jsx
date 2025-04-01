@@ -1,7 +1,8 @@
 import React from "react";
 import styles from "../../styles/home/Landing.module.css";
 import landing_video from "../../assets/landing_bg.mp4";
-import clients_img from "../../assets/clients_strip.webp"
+import clients_img from "../../assets/clients_strip.webp";
+import hero_img from "../../assets/nitika_mam.webp";
 
 function Landing() {
   return (
@@ -48,11 +49,10 @@ function Landing() {
         </div>
       </div>
       <div className={styles.c2}>
-        <img
-          className={styles.hero_image}
-          src="https://framerusercontent.com/images/E0x0I4RsxTtlOxSaM5UuuBvwbg0.jpeg?scale-down-to=1024&lossless=1"
-          alt=""
-        />
+        <div className={styles.img_ctr}>
+          <img className={styles.hero_image} src={hero_img} alt="" />
+          <div className={styles.blur}></div>
+        </div>
       </div>
       <video
         className={styles.landing_bg}
