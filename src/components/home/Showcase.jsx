@@ -132,15 +132,3 @@ function Showcase() {
 }
 
 export default Showcase;
-
-/**
- * <div className={styles.showcase_content_ctr}>
-              <img src="" alt="Logo" className={styles.logo} />
-              <span className={styles.showcase_heading}>Raven Company Inc</span>
-              <p className={styles.showcase_paragraph}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, suscipit?</p>
-              <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
-              </div>
-            </div>
- */
