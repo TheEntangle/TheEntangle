@@ -5,6 +5,7 @@ import Showcase from "../components/home/Showcase";
 import Working from "../components/home/Working";
 import TheEdge from "../components/TheEdge";
 import Portfolio from "../components/home/Portfolio";
+import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -15,6 +16,7 @@ function Home() {
       <TheEdge />
       <Working />
       <Portfolio />
+      <Footer />
     </>
   );
 }
