@@ -4,6 +4,7 @@ import AboutEntangle from "../components/home/AboutEntangle";
 import Showcase from "../components/home/Showcase";
 import Working from "../components/home/Working";
 import TheEdge from "../components/TheEdge";
+import Portfolio from "../components/home/Portfolio";
 
 function Home() {
   return (
@@ -13,6 +14,7 @@ function Home() {
       <Showcase />
       <TheEdge />
       <Working />
+      <Portfolio />
     </>
   );
 }
