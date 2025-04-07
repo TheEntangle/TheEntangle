@@ -1,5 +1,6 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
+import JellyTag from "./JellyTag";
 
 function Footer() {
   return (
@@ -20,14 +21,18 @@ function Footer() {
             </strong>
           </span>
           <div className={styles.input_ctr}>
-            <input className={styles.input} type="email" placeholder="Email address" />
+            <input
+              className={styles.input}
+              type="email"
+              placeholder="Email address"
+            />
             <button className={styles.primary_btn}>Subscribe Us</button>
           </div>
         </div>
         <div className={styles.right}>
           <div className={styles.links_ctr}>
             <span className={styles.link_heading}>Main Pages</span>
-            <ul className={styles.links_ctr}>
+            <ul className={styles.links_list}>
               <li>
                 <a href="">Home</a>
               </li>
@@ -44,7 +49,7 @@ function Footer() {
           </div>
           <div className={styles.links_ctr}>
             <span className={styles.link_heading}>Social</span>
-            <ul className={styles.links_ctr}>
+            <ul className={styles.links_list}>
               <li>
                 <a href="">Twitter (X)</a>
               </li>
@@ -59,6 +64,7 @@ function Footer() {
               </li>
             </ul>
           </div>
+          <JellyTag title="Project Completed - 40" />
         </div>
       </div>
       <div className={styles.bottom}>

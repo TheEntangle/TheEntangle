@@ -24,11 +24,35 @@
 }
 .credit {
   width: 250px;
+  font-weight: 200;
   opacity: 0.6;
 }
 .right {
   display: flex;
   gap: 5rem;
+  align-items: flex-start;
+}
+.links_ctr {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.link_heading {
+  font-size: 18px;
+}
+
+.links_list {
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.links_list li a {
+  color: var(--white-60);
+  transition: color 0.5s ease;
+}
+.links_list li a:hover {
+  color: var(--white);
 }
 .input_ctr {
   padding: 5px;
@@ -76,4 +100,18 @@
   background: var(--primary);
   filter: blur(15px);
   z-index: -100;
+}
+.bottom{
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  font-weight: 200;
+  
+}
+.policy_ctr{
+  display: flex;
+  gap: 20px;
+}
+.bottom a{
+  color: var(--white-60);
 }
