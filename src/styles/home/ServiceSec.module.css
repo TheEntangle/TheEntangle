@@ -1,0 +1,124 @@
+.services_section {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10rem;
+}
+.services_section_div {
+  /* max-width: 1440px; */
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+.head_ctr {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+}
+.element_details_img {
+  width: 400px;
+}
+.element_details_right_img {
+  scale-webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+.head_content_ctr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.heading {
+  font-size: 45px;
+  font-weight: 400;
+  text-align: center;
+}
+.heading span {
+  color: var(--white-60);
+}
+.paragraph {
+  width: 500px;
+  text-align: center;
+  color: var(--white-60);
+}
+
+/* linear-gradient(0.07383128568086761deg, var(--token-f5219c3a-5ee2-4639-9e23-4bdcf5509ebd, rgba(0, 85, 255, 0.15))  0%, var(--token-b456af2e-fd88-41ae-8686-ad7692875dfd, rgba(97, 97, 97, 0.09))  100%) */
+.cards_ctr {
+  display: grid;
+  gap: 24px;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(3, minmax(50px, 1fr));
+  grid-template-rows: repeat(2, min-content);
+  height: min-content;
+  justify-content: start;
+  overflow: hidden;
+  padding: 0 120px;
+
+  /* gap: 50px; */
+  /* border: 1px solid var(--white-60); */
+}
+.card {
+  position: relative;
+  border: 1px solid var(--white-12);
+  background: linear-gradient(
+    0.07383128568086761deg,
+    rgba(0, 85, 255, 0.15) 0%,
+    rgba(97, 97, 97, 0.09) 100%
+  );
+  border-radius: 18px;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card_top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.icon{
+    border-radius: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 85, 255, 0.35) 2px 4px 24px 0px;
+}
+.card_heading_1{
+  font-size: 16px;
+  font-weight: 600;
+}
+.card_heading_2{
+  font-size: 16px;
+  font-weight: 400;
+  color: var(--white-60);
+}
+.card_paragraph{
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--white-60);
+}
+.cta{
+  opacity: 0.4;
+  transition: opacity 0.3s ease-in-out;
+}
+.card:hover .cta{
+  opacity: 1;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 50%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 81, 255, 0) 0%,
+    #0051ff 50%,
+    rgba(0, 81, 255, 0) 100%
+  );
+}

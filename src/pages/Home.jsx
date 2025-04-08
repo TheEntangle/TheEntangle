@@ -8,6 +8,8 @@ import Portfolio from "../components/home/Portfolio";
 import Footer from "../components/Footer";
 import BookApointment from "../components/BookApointment";
 import Faq from "../components/Faq";
+import ServiceSec from "../components/home/ServiceSec";
+import Gallary from "../components/home/Gallary";
 
 function Home() {
   return (
@@ -17,7 +19,10 @@ function Home() {
       <Showcase />
       <TheEdge />
       <Working />
+      <ServiceSec />
+      <Gallary />
       <Portfolio />
+      <TheEdge />
       <Faq />
       <BookApointment />
       <Footer /> 

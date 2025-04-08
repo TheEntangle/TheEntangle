@@ -1,7 +1,8 @@
 .faq_section {
   display: flex;
-  padding: 5rem 10rem;
+  padding: 10rem 10rem;
   justify-content: space-between;
+  padding-bottom: 0;
 }
 .left{
     
@@ -39,6 +40,7 @@
     padding: 25px;
     max-width: 700px;
     border-radius: 18px;
+    background: var(--black);
 }
 .card *{
     font-weight: 400;
