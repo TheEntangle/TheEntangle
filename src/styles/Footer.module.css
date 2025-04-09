@@ -70,6 +70,11 @@
   font-size: 14px;
   font-weight: 500;
   color: var(--white);
+  border: 1px solid #ffffff00;
+}
+.input:focus {
+  outline: none;
+  border: 1px solid var(--primary);
 }
 
 .primary_btn {
@@ -101,17 +106,16 @@
   filter: blur(15px);
   z-index: -100;
 }
-.bottom{
+.bottom {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
   font-weight: 200;
-  
 }
-.policy_ctr{
+.policy_ctr {
   display: flex;
   gap: 20px;
 }
-.bottom a{
+.bottom a {
   color: var(--white-60);
 }

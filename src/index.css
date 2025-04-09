@@ -8,7 +8,7 @@
 
 :root {
   --bg: #000000;
-  --black: #070707;
+  --black: #080808;
   --black-10: rgba(7, 7, 7, 0.1);
   --black-20: rgba(7, 7, 7, 0.2);
   --black-50: rgba(7, 7, 7, 0.5);
@@ -28,6 +28,7 @@
   --primary-50: rgb(0, 81, 255, 0.5);
   --primary-20: rgb(0, 81, 255, 0.2);
   --primary-10: rgb(0, 81, 255, 0.1);
+  --input-bg: rgba(51, 51, 51, 0.2);
   --h1-fs: 32px;
   --h2-fs: 22px;
   --link-fs: 14px;
@@ -76,8 +77,11 @@ button {
   border: none;
   font-family: "DM Sans", sans-serif;
 }
-input {
+textarea,
+input,
+select {
   font-family: "DM Sans", sans-serif;
+  color: var(--white);
 }
 .italic {
   font-style: italic;
