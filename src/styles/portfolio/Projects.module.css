@@ -1,0 +1,117 @@
+.project_section {
+  padding: 5rem 10rem;
+  margin-top: -10rem;
+}
+
+.cards_ctr {
+  display: grid;
+  gap: 20px;
+  grid-auto-rows: minmax(0px, 1fr);
+  grid-template-columns: repeat(2, minmax(50px, 1fr));
+  height: min-content;
+  justify-content: center;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: linear-gradient(
+    0.07383128568086761deg,
+    rgba(0, 85, 255, 0.1) 0%,
+    rgba(0, 85, 255, 0.04) 100%
+  );
+  backdrop-filter: blur(5px);
+  border: 1px solid var(--white-12);
+  border-radius: 30px;
+}
+.image_ctr {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--white-12);
+  border-radius: 22px;
+  overflow: hidden;
+}
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center center;
+}
+.content_ctr {
+  display: flex;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  right: 20px;
+  justify-content: space-between;
+  align-items: center;
+  background: radial-gradient(
+      43% 50% at 50% 50%,
+      rgba(9, 9, 18, 0.15) 0%,
+      rgb(9, 9, 18) 100%
+    ),
+    rgb(0, 14, 43);
+  box-shadow: rgba(0, 85, 255, 0.1) 0px 10px 10px -1px inset,
+    rgba(0, 0, 0, 0.35) 2px 4px 24px 10px;
+
+  padding: 10px 15px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 85, 255, 0.15);
+  /* backdrop-filter: blur(100px); */
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 500;
+}
+.date {
+  border: 1px solid rgba(0, 85, 255, 0.2);
+  border-radius: 7px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 153, 255, 0.15) 0%,
+    rgb(9, 9, 18) 100%
+  );
+  padding: 7px 10px;
+  box-shadow: rgba(0, 85, 255, 0.25) 0px 5px 25px 0px,
+    rgba(255, 255, 255, 0.08) 0px 10px 10px -1px inset,
+    rgba(0, 85, 255, 0.1) 0px 10px 10px -1px inset;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white-60);
+}
+.tag {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: radial-gradient(
+    50% 50% at 50% 50%,
+    rgba(0, 153, 255, 0.15) 0%,
+    rgb(9, 9, 18) 100%
+  );
+  box-shadow: rgba(0, 85, 255, 0.1) 0px 10px 10px -1px inset;
+  border: 1px solid rgba(0, 85, 255, 0.1);
+  padding: 10px 15px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: 200;
+}
+.tag::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 1px;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 85, 255, 0) 0%,
+    rgb(0, 85, 255) 50%,
+    rgba(0, 85, 255, 0) 100%
+  );
+}

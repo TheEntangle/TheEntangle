@@ -16,8 +16,11 @@ function Navbar() {
             Home
           </Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/service">Service</Link>
+        </li> */}
+        <li>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
           <Link to="/about">About</Link>
