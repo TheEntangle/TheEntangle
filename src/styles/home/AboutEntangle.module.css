@@ -155,8 +155,9 @@
 @media screen and (max-width: 992px) {
   .aboutentangle_section {
     padding: 1rem 3rem;
-    flex-direction: column;
+    flex-direction: column-reverse;
     text-align: center;
+    
   }
   .c2 {
     align-items: center;
@@ -166,8 +167,9 @@
     max-width: 500px;
   }
   .img_ctr {
-    display: none;
+    /* display: none; */
     --responive-factor: 1.4;
+    margin: 3rem 0;
   }
   .list {
     align-items: flex-start;

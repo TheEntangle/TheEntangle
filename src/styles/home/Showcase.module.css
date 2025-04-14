@@ -1,5 +1,5 @@
 .showcase_section {
-  padding: 5rem 0;
+  padding: 5rem 2rem;
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -9,12 +9,14 @@
   justify-content: center;
   align-items: center;
   gap: 1.5rem;
+  flex-wrap: wrap;
 }
 .element_details_img {
-  width: 400px;
+  width: 100%;
+  max-width: 400px;
 }
 .element_details_right_img {
-  scale-webkit-transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 .head_content_ctr {
@@ -22,13 +24,15 @@
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  text-align: center;
 }
 .heading {
-  font-size: 45px;
+  font-size: clamp(32px, 5vw, 45px);
   font-weight: 400;
 }
 .paragraph {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
   text-align: center;
   color: var(--white-60);
 }
@@ -46,14 +50,23 @@
     rgb(0, 0, 0) 87.5%,
     rgba(0, 0, 0, 0) 100%
   );
-  overflow-x: hidden;
+  overflow-x: auto;
+  padding: 1rem;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+}
+
+.showcase_slides_ctr::-webkit-scrollbar {
+  display: none;
 }
 
 .showcase_card {
   position: relative;
+  width: 100%;
+  min-width: 280px;
   max-width: 400px;
   height: 500px;
-
+  flex-shrink: 0;
   padding: 7px;
   border-radius: 18px;
   border: 1px solid rgba(255, 255, 255, 0.05);
@@ -86,6 +99,7 @@
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -113,4 +127,50 @@
   border-radius: 5px;
   border: 1px solid rgba(255, 255, 255, 0.05);
   background: linear-gradient(180deg, #101010 0%, #151515 100%);
+}
+
+@media (max-width: 1412px) {
+  .element_details_img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  .showcase_section {
+    padding: 3rem 1rem;
+    gap: 40px;
+  }
+  
+  .element_details_ctr {
+    display: none;
+  }
+  
+  .head_content_ctr {
+    padding: 0 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .showcase_card {
+    min-width: 260px;
+    height: 450px;
+  }
+  
+  .showcase_content_ctr {
+    padding: 12px 8px;
+    margin: 8px;
+  }
+  
+  .showcase_heading {
+    font-size: 14px;
+  }
+  
+  .showcase_paragraph {
+    font-size: 12px;
+  }
+  
+  .jelly_tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
 }

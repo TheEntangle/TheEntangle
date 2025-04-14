@@ -17,8 +17,8 @@ function Home() {
     <PageTransition>
       <Landing />
       <AboutEntangle />
-      {/* <Showcase />
-      <TheEdge />
+      <Showcase />
+      {/* <TheEdge />
       <Working />
       <ServiceSec />
       <Gallary />
