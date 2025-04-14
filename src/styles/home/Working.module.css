@@ -3,6 +3,7 @@
   display: flex;
   justify-content: center;
   margin-top: 10rem;
+  background: var(--black);
 }
 .working_section_div {
   display: flex;
@@ -38,13 +39,16 @@
   border-radius: 20px;
   overflow: hidden;
   margin: 30px 0;
+  height: 320px;
 }
 .card_bg_ctr {
   width: 100%;
+  height: 100%;
 }
 .card_bg_img {
   display: block;
   width: 100%;
+  height: 100%;
   object-fit: cover;
   object-position: center center;
   filter: brightness(180%);
@@ -53,6 +57,8 @@
   position: absolute;
   top: 0;
   left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
   padding: 40px;
@@ -60,6 +66,7 @@
   flex-direction: column;
   justify-content: space-between;
   color: var(--white-60);
+  gap: 20px;
 }
 .icon {
   display: flex;
@@ -176,5 +183,96 @@
   }
   100% {
     height: 50px;
+  }
+}
+
+/* Laptop and smaller desktop screens */
+@media screen and (max-width: 1280px) {
+  .working_section_div {
+    padding: 4rem 6rem;
+    gap: 3rem;
+  }
+  .heading {
+    font-size: 42px;
+  }
+  .card_content {
+    padding: 30px;
+  }
+}
+
+/* Tablets and smaller laptops */
+@media screen and (max-width: 1024px) {
+  .working_section_div {
+    padding: 3rem 4rem;
+    flex-direction: column;
+  }
+  .c1, .c2 {
+    width: 100%;
+  }
+  .img_ctr {
+    max-width: 100%;
+    aspect-ratio: 16/9;
+  }
+  .heading br {
+    display: none;
+  }
+}
+
+/* Larger mobile devices and small tablets */
+@media screen and (max-width: 768px) {
+  .working_section {
+    /* margin-top: 6rem; */
+  }
+  .working_section_div {
+    padding: 2rem;
+    gap: 2rem;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .card_content {
+    padding: 20px;
+  }
+  .jelly_tag_ctr {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .jelly_tag {
+    width: fit-content;
+  }
+  .img_ctr {
+    max-width: 100%;
+    aspect-ratio: 1/1;
+  }
+}
+
+/* Mobile devices */
+@media screen and (max-width: 480px) {
+  .working_section {
+    /* margin-top: 4rem; */
+  }
+  .working_section_div {
+    padding: 1rem;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .card{
+    height: 340px;
+  }
+  .card_content {
+    padding: 25px 20px;
+  }
+  .card_heading {
+    font-size: 18px;
+  }
+  .card_paragraph {
+    font-size: 13px;
+  }
+  .icon {
+    --icon-size: 40px;
   }
 }

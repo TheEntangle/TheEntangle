@@ -18,9 +18,9 @@ function Home() {
       <Landing />
       <AboutEntangle />
       <Showcase />
-      {/* <TheEdge />
+      <TheEdge />
       <Working />
-      <ServiceSec />
+      {/* <ServiceSec />
       <Gallary />
       <Portfolio />
       <TheEdge />
