@@ -2,19 +2,83 @@
   display: flex;
   padding: 5rem 10rem;
   position: relative;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   gap: 5rem;
 }
 .image {
+  position: relative;
   --responive-factor: 1.5;
   width: calc(320px * var(--responive-factor));
   height: auto;
   aspect-ratio: 1/1;
   object-fit: cover;
   object-position: center center;
-  border-radius: 12px;
+  border-radius: 22px;
+  border: 1px solid var(--white-12);
 }
+.img_ctr {
+  position: relative;
+  height: auto;
+  width: 100%;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img_ctr::before {
+  content: "";
+  position: absolute;
+  --pad_space: -10px;
+  top: var(--pad_space);
+  left: var(--pad_space);
+  right: var(--pad_space);
+  bottom: var(--pad_space);
+  background: var(--white-01);
+  border-radius: 26px;
+  border: 1px solid var(--white-12);
+}
+.img_ctr::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 81, 255, 0) 0%,
+    #0051ff 50%,
+    rgba(0, 81, 255, 0) 100%
+  );
+}
+.blur {
+  content: "";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70%;
+  /* height: 30px; */
+  border-radius: 100%;
+  background: var(--primary);
+  filter: blur(50px);
+  z-index: -50;
+  animation: blue-animation 5s infinite ease;
+}
+@keyframes blue-animation {
+  0% {
+    height: 50px;
+  }
+  50% {
+    height: 30px;
+  }
+  100% {
+    height: 50px;
+  }
+}
+
 .c2 {
   display: flex;
   flex-direction: column;
@@ -57,6 +121,7 @@
 }
 .paragraph {
   font-size: 22px;
+  max-width: 550px;
   /* color: var(--white-60); */
 }
 .list {
@@ -70,4 +135,78 @@
   display: flex;
   align-items: center;
   gap: 10px;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .aboutentangle_section {
+    padding: 4rem 5rem;
+    gap: 3rem;
+  }
+  .image {
+    --responive-factor: 1.2;
+  }
+  .paragraph {
+    font-size: 20px;
+    font-weight: 500;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .aboutentangle_section {
+    padding: 1rem 3rem;
+    flex-direction: column;
+    text-align: center;
+  }
+  .c2 {
+    align-items: center;
+    gap: 30px;
+  }
+  .paragraph {
+    max-width: 500px;
+  }
+  .img_ctr {
+    display: none;
+    --responive-factor: 1.4;
+  }
+  .list {
+    align-items: flex-start;
+    text-align: left;
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutentangle_section {
+    padding: 1rem 2rem;
+  }
+  .image {
+    --responive-factor: 1.1;
+  }
+  .paragraph {
+    font-size: 18px;
+  }
+  .list {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .aboutentangle_section {
+    padding: 2rem 1rem;
+  }
+  .image {
+    --responive-factor: 0.9;
+  }
+  .paragraph {
+    font-size: 16px;
+  }
+  .list {
+    font-size: 14px;
+  }
+  .jelly_tag {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
 }

@@ -8,11 +8,14 @@ function AboutEntangle() {
   return (
     <section className={styles.aboutentangle_section}>
       <div className={styles.c1}>
-        <img
-          className={styles.image}
-          src="https://framerusercontent.com/images/Qnjbg5sx80zqC8P7TMF9g3DgCA.jpeg?scale-down-to=2048"
-          alt=""
-        />
+        <div className={styles.img_ctr}>
+          <img
+            className={styles.image}
+            src="https://framerusercontent.com/images/Qnjbg5sx80zqC8P7TMF9g3DgCA.jpeg?scale-down-to=2048"
+            alt=""
+          />
+          <div className={styles.blur}></div>
+        </div>
       </div>
 
       <div className={styles.c2}>
@@ -47,7 +50,7 @@ function AboutEntangle() {
             </span>
           </li>
         </ul>
-        <PrimaryBtn title="View About Entangle" />
+        <PrimaryBtn title="View About Entangle" path="/about" />
       </div>
     </section>
   );

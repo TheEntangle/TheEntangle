@@ -16,8 +16,8 @@ function Home() {
   return (
     <PageTransition>
       <Landing />
-      {/* <AboutEntangle />
-      <Showcase />
+      <AboutEntangle />
+      {/* <Showcase />
       <TheEdge />
       <Working />
       <ServiceSec />
