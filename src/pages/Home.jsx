@@ -10,10 +10,11 @@ import BookApointment from "../components/BookApointment";
 import Faq from "../components/Faq";
 import ServiceSec from "../components/home/ServiceSec";
 import Gallary from "../components/home/Gallary";
+import PageTransition from "../components/PageTransition";
 
 function Home() {
   return (
-    <>
+    <PageTransition>
       <Landing />
       <AboutEntangle />
       <Showcase />
@@ -25,8 +26,8 @@ function Home() {
       <TheEdge />
       <Faq />
       <BookApointment />
-      <Footer /> 
-    </>
+      <Footer />
+    </PageTransition>
   );
 }
 

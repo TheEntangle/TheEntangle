@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import PageTransition from "../components/PageTransition";
 
 function Services() {
   return (
-    <div>Services</div>
-  )
+    <PageTransition>
+      <div>Services</div>
+    </PageTransition>
+  );
 }
 
-export default Services
+export default Services;
