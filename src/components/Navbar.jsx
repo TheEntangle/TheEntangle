@@ -19,7 +19,7 @@ function Navbar() {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={`${styles.navbar} ${isMenuOpen ? "active" : ""} navbar`}>
       <div className={styles.logo_ctr}>
         <NavLink to="/">TheEntangle</NavLink>
       </div>
@@ -27,16 +27,12 @@ function Navbar() {
         <li>
           <NavLink to="/">Home</NavLink>
         </li>
-        {/* <li>
-          <Link to="/service">Service</Link>
-        </li> */}
         <li>
           <NavLink to="/portfolio">Portfolio</NavLink>
         </li>
         <li>
           <NavLink to="/about">About</NavLink>
         </li>
-        {/* <li><a href="#">Contact</a></li> */}
       </ul>
       <div className={styles.cta_ctr}>
         <PrimaryBtn title="Contact us" path="/contact" />

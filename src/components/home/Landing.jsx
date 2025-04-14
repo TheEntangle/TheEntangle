@@ -4,6 +4,7 @@ import landing_video from "../../assets/landing_bg.mp4";
 import clients_img from "../../assets/clients_strip.webp";
 import hero_img from "../../assets/nitika_mam.webp";
 import { shine } from "../../assets/icons";
+import { NavLink } from "react-router-dom";
 
 function Landing() {
   return (
@@ -17,9 +18,9 @@ function Landing() {
           Reprehenderit explicabo unde animi quo? Cumque, impedit!
         </p>
         <div className={styles.cta_ctr}>
-          <a href="" className={styles.primary_btn}>
+          <NavLink to="/contact" className={styles.primary_btn}>
             Connect with us
-          </a>
+          </NavLink>
           <a href="" className={styles.secondary_btn}>
             What is Entangle?
           </a>

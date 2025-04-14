@@ -11,13 +11,17 @@
   text-shadow: 0 0 1px var(--primary);
 }
 .nav_links_mob li a.active {
-  color: var(--white);
-  text-shadow: 0 0 1px var(--white);
+  color: var(--primary);
+  text-shadow: 0 0 1px var(--primary);
 }
 .nav_links_mob.active {
   opacity: 1;
   transform: translateX(0);
 }
+.navbar.active {
+  backdrop-filter: none;
+}
+
 .nav_links_mob li a {
   font-size: 18px;
 }

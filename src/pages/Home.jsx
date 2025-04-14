@@ -16,7 +16,7 @@ function Home() {
   return (
     <PageTransition>
       <Landing />
-      <AboutEntangle />
+      {/* <AboutEntangle />
       <Showcase />
       <TheEdge />
       <Working />
@@ -26,7 +26,7 @@ function Home() {
       <TheEdge />
       <Faq />
       <BookApointment />
-      <Footer />
+      <Footer /> */}
     </PageTransition>
   );
 }
