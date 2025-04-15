@@ -20,13 +20,13 @@ function Home() {
       <Showcase />
       <TheEdge />
       <Working />
-      {/* <ServiceSec />
+      <ServiceSec />
       <Gallary />
       <Portfolio />
       <TheEdge />
       <Faq />
       <BookApointment />
-      <Footer /> */}
+      <Footer />
     </PageTransition>
   );
 }
