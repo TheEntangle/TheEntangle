@@ -2,8 +2,8 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  margin-top: 10rem;
-  background: var(--black);
+  margin: 10rem 0 0 0;
+  background: var(--bg);
 }
 .working_section_div {
   display: flex;
@@ -202,11 +202,15 @@
 
 /* Tablets and smaller laptops */
 @media screen and (max-width: 1024px) {
+  .working_section {
+    margin: 10rem 0;
+  }
   .working_section_div {
     padding: 3rem 4rem;
     flex-direction: column;
   }
-  .c1, .c2 {
+  .c1,
+  .c2 {
     width: 100%;
   }
   .img_ctr {
@@ -222,6 +226,7 @@
 @media screen and (max-width: 768px) {
   .working_section {
     /* margin-top: 6rem; */
+    margin: 10rem 0;
   }
   .working_section_div {
     padding: 2rem;
@@ -260,7 +265,7 @@
   .paragraph {
     font-size: 14px;
   }
-  .card{
+  .card {
     height: 340px;
   }
   .card_content {
