@@ -33,6 +33,7 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
+  z-index: 1;
 }
 .card_bg {
   /* position: absolute; */

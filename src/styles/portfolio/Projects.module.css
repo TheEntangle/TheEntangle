@@ -115,3 +115,85 @@
     rgba(0, 85, 255, 0) 100%
   );
 }
+
+/* Responsive Styles */
+@media screen and (max-width: 1200px) {
+  .project_section {
+    padding: 5rem 6rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .project_section {
+    padding: 4rem 4rem;
+    margin-top: -8rem;
+  }
+
+  .title {
+    font-size: 16px;
+  }
+
+  .date {
+    font-size: 14px;
+    padding: 5px 8px;
+  }
+
+  .tag {
+    font-size: 14px;
+    padding: 8px 12px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .project_section {
+    padding: 3rem 2rem;
+    margin-top: -6rem;
+  }
+
+  .cards_ctr {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .content_ctr {
+    bottom: 15px;
+    left: 15px;
+    right: 15px;
+    padding: 8px 12px;
+    border-radius: 16px;
+  }
+
+  .tag {
+    top: 15px;
+    right: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .project_section {
+    padding: 2rem 1rem;
+    margin-top: -4rem;
+  }
+
+  .card {
+    padding: 8px;
+    border-radius: 20px;
+  }
+
+  .image_ctr {
+    border-radius: 16px;
+  }
+
+  .content_ctr {
+    bottom: 12px;
+    left: 12px;
+    right: 12px;
+    border-radius: 14px;
+  }
+
+  .tag {
+    top: 12px;
+    right: 12px;
+    border-radius: 8px;
+  }
+}
