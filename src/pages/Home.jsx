@@ -23,10 +23,10 @@ function Home() {
       <ServiceSec />
       <Gallary />
       <Portfolio />
-      {/* <TheEdge />
+      <TheEdge />
       <Faq />
-      <BookApointment />
-      <Footer /> */}
+      {/* <BookApointment /> */}
+      {/* <Footer /> */}
     </PageTransition>
   );
 }

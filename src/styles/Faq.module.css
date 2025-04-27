@@ -1,11 +1,17 @@
 .faq_section {
   display: flex;
-  padding: 10rem 10rem;
+  padding: 10rem 5rem;
   justify-content: space-between;
   padding-bottom: 0;
+  max-width: 1440px;
+  margin: auto;
+  gap: 50px;
+  background: var(--bg);
 }
-.left{
-    
+.left {
+  width: 400px;
+  flex-shrink: 0;
+  /* background: red; */
 }
 .heading_ctr {
   display: flex;
@@ -26,30 +32,100 @@
   color: var(--white-60);
   max-width: 400px;
 }
-.cards_ctr{
-    /* max-width: 500px; */
-    display: flex;
+.cards_ctr {
+  /* max-width: 500px; */
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.card {
+  border: 1px solid var(--white-12);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 25px;
+  max-width: 700px;
+  border-radius: 18px;
+  background: var(--black);
+}
+.card * {
+  font-weight: 400;
+}
+.card_heading {
+  font-size: 18px;
+}
+.card_paragraph {
+  font-size: 16px;
+  color: var(--white-60);
+  line-height: 1.5;
+}
+
+@media (max-width: 1450px) {
+  .faq_section {
+    padding: 10rem 7rem;
+  }
+}
+@media (max-width: 1200px) {
+  .faq_section {
     flex-direction: column;
-    gap: 20px;
+  }
+  .left {
+    width: 100%;
+  }
+  .card {
+    max-width: 100%;
+  }
 }
-.card{
-    border: 1px solid var(--white-12);
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding: 25px;
-    max-width: 700px;
-    border-radius: 18px;
-    background: var(--black);
-}
-.card *{
-    font-weight: 400;
-}
-.card_heading{
-    font-size: 18px;
-}
-.card_paragraph{
+@media (max-width: 1024px) {
+  .faq_section {
+    padding: 10rem 5rem;
+  }
+  .heading {
+    font-size: 38px;
+  }
+  .card_heading {
     font-size: 16px;
-    color: var(--white-60);
-    line-height: 1.5;
+  }
+  .card_paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 768px) {
+  .faq_section {
+    padding: 7rem 3rem;
+  }
+}
+@media (max-width: 430px) {
+  .faq_section {
+    padding: 5rem 2rem;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+  .card_heading {
+    font-size: 14px;
+  }
+  .card_paragraph {
+    font-size: 12px;
+  }
+}
+@media (max-width: 320px) {
+  .faq_section {
+    padding: 5rem 1rem;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 12px;
+  }
+  .card_heading {
+    font-size: 14px;
+  }
+  .card_paragraph {
+    font-size: 12px;
+  }
 }
