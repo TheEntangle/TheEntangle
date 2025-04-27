@@ -22,8 +22,8 @@ function Home() {
       <Working />
       <ServiceSec />
       <Gallary />
-      {/* <Portfolio />
-      <TheEdge />
+      <Portfolio />
+      {/* <TheEdge />
       <Faq />
       <BookApointment />
       <Footer /> */}
