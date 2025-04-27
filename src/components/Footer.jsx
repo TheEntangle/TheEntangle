@@ -64,7 +64,9 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <JellyTag title="Project Completed - 40" />
+          <div className={styles.project_count_ctr}>
+            <JellyTag title="Project Completed - 40" />
+          </div>
         </div>
       </div>
       <div className={styles.bottom}>

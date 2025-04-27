@@ -26,7 +26,7 @@ function Home() {
       <TheEdge />
       <Faq />
       <BookApointment />
-      {/* <Footer /> */}
+      <Footer />
     </PageTransition>
   );
 }
