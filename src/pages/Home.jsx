@@ -25,7 +25,7 @@ function Home() {
       <Portfolio />
       <TheEdge />
       <Faq />
-      {/* <BookApointment /> */}
+      <BookApointment />
       {/* <Footer /> */}
     </PageTransition>
   );
