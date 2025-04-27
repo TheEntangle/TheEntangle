@@ -10,7 +10,7 @@ function Portfolio() {
   return (
     <PageTransition>
       <Landing />
-      <Projects />
+      {/* <Projects /> */}
       <TheEdge />
       <BookApointment />
       <Footer />
