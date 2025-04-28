@@ -4,9 +4,9 @@ import { Link, NavLink } from "react-router-dom";
 
 function PrimaryBtn(props) {
   return (
-    <NavLink to={props.path} className={styles.cta_btn}>
+    <Link to={props.path} className={styles.cta_btn}>
       {props.title}
-    </NavLink>
+    </Link>
   );
 }
 
