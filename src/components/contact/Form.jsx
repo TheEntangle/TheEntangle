@@ -213,8 +213,8 @@ function Form() {
                 <span>{email}</span> Email{" "}
                 <span className={styles.badge}>24/7</span>
               </p>
-              <a href="mailto:help@landin.com" className={styles.infoText}>
-                help [at] Landin.com
+              <a href="mailto:connect@theentangle.com" className={styles.infoText}>
+                connect@theentangle.com
               </a>
             </div>
           </div>
@@ -224,8 +224,8 @@ function Form() {
               <p className={styles.infoTitle}>
                 <span>{phone}</span> Phone
               </p>
-              <a href="tel:+17175501675" className={styles.infoText}>
-                +1 (717) 550–1675
+              <a href="tel:+91-90982-73132" className={styles.infoText}>
+                +91-90982-73132
               </a>
             </div>
           </div>
@@ -237,11 +237,11 @@ function Form() {
                 <span className={styles.badge}>REMOTE</span>
               </p>
               <a href="#" className={styles.infoText}>
-                California [CA], 90011
+                Somewhere in
                 <br />
-                49th St. Los Angeles
+                Rajandra Nagar, Indore
                 <br />
-                United States
+                Madhya Pradesh, India
               </a>
             </div>
           </div>
