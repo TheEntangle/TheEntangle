@@ -30,6 +30,34 @@
   max-width: 900px;
 }
 
+.successMessage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5rem 1rem;
+  gap: 1.5rem;
+}
+.checkIcon {
+  width: 100px;
+  height: 100px;
+  color: #00ffae;
+  filter: drop-shadow(0 0 25px #00ffae);
+}
+.sm_heading {
+  font-size: 36px;
+  font-weight: 500;
+  text-align: center;
+  line-height: 1.1;
+}
+.sm_paragraph {
+  font-size: 22px;
+  font-weight: 400;
+  max-width: 320px;
+  text-align: center;
+  color: var(--white-60);
+  line-height: 1.1;
+}
+
 .form {
   background: var(--black);
   border: 1px solid var(--white-10);
@@ -197,6 +225,15 @@
 @media (max-width: 768px) {
   .form {
     padding: 30px;
+  }
+}
+@media (max-width: 550px) {
+  .sm_heading {
+    font-size: 28px;
+  }
+  .sm_paragraph {
+    font-size: 18px;
+    max-width: 280px;
   }
 }
 @media (max-width: 500px) {

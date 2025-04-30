@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import styles from "../../styles/conatct/Form.module.css";
 import { email, phone, location } from "../../assets/contact_icons";
+import { BadgeCheck } from 'lucide-react';
 
 function Form() {
   const form = useRef();
@@ -73,8 +74,9 @@ function Form() {
         <div className={styles.formWrapper}>
           {formStatus.submitted ? (
             <div className={styles.successMessage}>
-              <h3>Thank you for your message!</h3>
-              <p>We've received your inquiry and will get back to you shortly.</p>
+              <BadgeCheck className={styles.checkIcon} />
+              <h3 className={styles.sm_heading}>Thank you for your message!</h3>
+              <p className={styles.sm_paragraph}>We've received your inquiry and will get back to you shortly.</p>
               <button 
                 className={styles.submitButton}
                 onClick={() => setFormStatus({ submitting: false, submitted: false, error: null })}
