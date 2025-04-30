@@ -10,7 +10,7 @@ function Form() {
     firstName: "",
     lastName: "",
     email: "",
-    country: "",
+    mobileNumber: "",
     companyType: "",
     message: ""
   });
@@ -26,7 +26,7 @@ function Form() {
       ...formData,
       [id === "first-name" ? "firstName" : 
        id === "last-name" ? "lastName" : 
-       id === "country" ? "country" : 
+       id === "mobileNumber" ? "mobileNumber" : 
        id === "service" ? "companyType" : id]: value
     });
   };
@@ -53,7 +53,7 @@ function Form() {
           firstName: "",
           lastName: "",
           email: "",
-          country: "",
+          mobileNumber: "",
           companyType: "",
           message: ""
         });
@@ -100,7 +100,7 @@ function Form() {
                     id="first-name"
                     name="firstName"
                     type="text"
-                    placeholder="Jane"
+                    placeholder="Tony"
                     className={styles.input}
                     value={formData.firstName}
                     onChange={handleChange}
@@ -115,7 +115,7 @@ function Form() {
                     id="last-name"
                     name="lastName"
                     type="text"
-                    placeholder="Smith"
+                    placeholder="Stark"
                     className={styles.input}
                     value={formData.lastName}
                     onChange={handleChange}
@@ -132,7 +132,7 @@ function Form() {
                   id="email"
                   name="email"
                   type="email"
-                  placeholder="jane@framer.com"
+                  placeholder="email@company.com"
                   className={styles.input}
                   value={formData.email}
                   onChange={handleChange}
@@ -142,24 +142,19 @@ function Form() {
 
               <div className={styles.row}>
                 <div className={styles.fieldGroup}>
-                  <label className={styles.label} htmlFor="country">
-                    Where are you from?*
+                  <label className={styles.label} htmlFor="mobileNumber">
+                    Wanna share your Phone no?*
                   </label>
-                  <select 
-                    className={styles.select} 
-                    id="country"
-                    name="country"
-                    value={formData.country}
+                  <input 
+                    id="mobileNumber"
+                    name="mobileNumber"
+                    placeholder="Phone no."
+                    className={styles.input}
+                    value={formData.mobileNumber}
                     onChange={handleChange}
                     required
-                  >
-                    <option value="">Select your country...</option>
-                    <option value="USA">United States</option>
-                    <option value="Canada">Canada</option>
-                    <option value="UK">United Kingdom</option>
-                    <option value="Australia">Australia</option>
-                    {/* Add more countries as needed */}
-                  </select>
+                  />
+                  
                 </div>
                 <div className={styles.fieldGroup}>
                   <label className={styles.label} htmlFor="service">
