@@ -23,12 +23,11 @@ function Portfolio() {
             <JellyTag title="Portfolio" />
             <h1 className={styles.heading}>
               Our Selected Projects <br />
-              <span>That Propel Your Website.</span>
+              <span>That Propel Possibilities.</span>
             </h1>
 
             <p className={styles.paragraph}>
-              Explore our curated work, showcasing collaborations with visionary
-              clients across diverse industries.
+            Bringing bold concepts to life through purposeful design, development, and innovation.
             </p>
             <PrimaryBtn title="View Portfolio" />
           </div>

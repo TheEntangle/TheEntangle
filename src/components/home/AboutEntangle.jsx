@@ -11,7 +11,7 @@ function AboutEntangle() {
         <div className={styles.img_ctr}>
           <img
             className={styles.image}
-            src="https://framerusercontent.com/images/Qnjbg5sx80zqC8P7TMF9g3DgCA.jpeg?scale-down-to=2048"
+            src="https://media.istockphoto.com/id/1363276509/photo/teacher-giving-computer-science-lecture-to-diverse-multiethnic-group-of-female-and-male.jpg?s=612x612&w=0&k=20&c=iHDI7pI98XJfh95nFw-wT9L9jYr0IzSBYB53riWOVsk="
             alt=""
           />
           <div className={styles.blur}></div>

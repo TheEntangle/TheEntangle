@@ -15,8 +15,7 @@ function Landing() {
           Let’s Deep Dive!
         </h1>
         <p className={styles.paragraph}>
-        Landin is your go-to agency for creative thinking and 
-        marketing ideas. We specialize in digital business solutions.
+        catalyst for innovation and a hub for aspiring professionals, fostering growth through collaboration, knowledge-sharing, and real-world experiences.
         </p>
         <PrimaryBtn title="Connect with us" />
       </div>

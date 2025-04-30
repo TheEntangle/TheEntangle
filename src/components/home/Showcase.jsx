@@ -3,7 +3,10 @@ import styles from "../../styles/home/Showcase.module.css";
 import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
-import company_1 from "../../assets/com_logo/iit_indore.png"
+import company_1 from "../../assets/com_logo/iit_indore.png";
+import company_2 from "../../assets/com_logo/medicaps.png";
+import company_3 from "../../assets/com_logo/sage.png";
+import company_4 from "../../assets/com_logo/symbiosis.png";
 
 function Showcase() {
   return (
@@ -23,8 +26,8 @@ function Showcase() {
           <h1 className={styles.heading}>The Entangle in Action</h1>
 
           <p className={styles.paragraph}>
-            A glimpse into our journey of innovation, collaboration, and
-            growth—captured in action!
+            From inspiring talks to hands-on workshops, explore highlights from
+            our recent events and experiences!
           </p>
           <PrimaryBtn title="Book a 15-min call" />
         </div>
@@ -48,7 +51,12 @@ function Showcase() {
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img src={company_1} alt="Logo" className={styles.logo} width="100px" />
+              <img
+                src={company_1}
+                alt="Logo"
+                className={styles.logo}
+                width="100px"
+              />
               <span className={styles.showcase_heading}>
                 IIT Indore – Tech Symposium 2024
               </span>
@@ -67,20 +75,27 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://framerusercontent.com/images/JCaZzme2XYHwWAWbEWjb3W3WpE.jpeg"
+              src="https://conference.medicaps.ac.in/static/media/newImage1.44f1c0d2e7329160e5cf.jpg"
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img src="" alt="Logo" className={styles.logo} />
-              <span className={styles.showcase_heading}>Raven Company Inc</span>
+              <img
+                src={company_2}
+                alt="Logo"
+                className={styles.logo}
+                width="100px"
+              />
+              <span className={styles.showcase_heading}>
+                Medi-Caps University - IEEE Conference
+              </span>
               <p className={styles.showcase_paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, suscipit?
+                Co-hosted IEEE conference on AI and tech innovations with expert
+                keynotes and paper presentations.
               </p>
               <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
+                <span className={styles.jelly_tag}>IEEE2024</span>
+                <span className={styles.jelly_tag}>ResearchDriven</span>
               </div>
             </div>
           </div>
@@ -89,20 +104,27 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://framerusercontent.com/images/JCaZzme2XYHwWAWbEWjb3W3WpE.jpeg"
+              src="https://images.shiksha.com/mediadata/images/1522666975phpBeIurs.png"
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img src="" alt="Logo" className={styles.logo} />
-              <span className={styles.showcase_heading}>Raven Company Inc</span>
+              <img
+                src={company_3}
+                alt="Logo"
+                className={styles.logo}
+                width="100px"
+              />
+              <span className={styles.showcase_heading}>
+                Sage University Indore
+              </span>
               <p className={styles.showcase_paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, suscipit?
+                Conducted full-stack development bootcamp with live project
+                demos and student mentorship sessions.
               </p>
               <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
+                <span className={styles.jelly_tag}>Bootcamp2024</span>
+                <span className={styles.jelly_tag}>SkillUp</span>
               </div>
             </div>
           </div>
@@ -111,16 +133,23 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://framerusercontent.com/images/JCaZzme2XYHwWAWbEWjb3W3WpE.jpeg"
+              src="https://www.suas.ac.in/wp-content/uploads/2022/01/Symbiosis-University-Indore-Campus.jpg"
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img src="" alt="Logo" className={styles.logo} />
-              <span className={styles.showcase_heading}>Raven Company Inc</span>
+              <img
+                src={company_4}
+                alt="Logo"
+                className={styles.logo}
+                width="100px"
+              />
+              <span className={styles.showcase_heading}>
+                Symbiosis Institute
+              </span>
               <p className={styles.showcase_paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, suscipit?
+                Motivational leadership talk encouraging youth to innovate,
+                lead, and embrace change
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>20% Conversion Rates</span>

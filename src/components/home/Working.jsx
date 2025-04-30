@@ -13,11 +13,12 @@ function Working() {
           <JellyTag title="How we work?" />
           <h2 className={styles.heading}>
             We simplify the journey <br />
-            <span>from Design to Launch.</span>
+            <span>from Vision to Impact.</span>
           </h2>
           <p className={styles.paragraph}>
-            We make it easy to bring your ideas to life, guiding you from
-            concept to a fully launched product.
+            We transform bold ideas into real-world solutions through strategic
+            planning, creative execution, collaborative teamwork, and continuous
+            innovation.
           </p>
           <div className={styles.card}>
             <div className={styles.card_bg_ctr}>
@@ -27,15 +28,15 @@ function Working() {
               <div className={styles.top}>
                 <div className={styles.icon}>{rocket}</div>
               </div>
-              <span className={styles.card_heading}>Kickoff</span>
+              <span className={styles.card_heading}>Envision</span>
               <p className={styles.card_paragraph}>
-                The kickoff stage is where everything begins. We align with you
-                to understand your goals, vision, and expectations. Through
-                in-depth discussions and thorough research.
+                We begin by deeply understanding your goals, identifying core
+                challenges, and visualizing tailored, strategic solutions. This
+                stage lays the foundation for innovative and impactful outcomes.
               </p>
               <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
+                <span className={styles.jelly_tag}>IdeaToAction</span>
+                <span className={styles.jelly_tag}>StrategicThinking</span>
               </div>
             </div>
           </div>
@@ -45,8 +46,8 @@ function Working() {
             {/* {shine} */}
             <img
               className={styles.hero_image}
-              src="https://framerusercontent.com/images/oUAzCBZlCCsvzmsAiYQ3RDbhyg.jpeg"
-              alt=""
+              src="https://images.stockcake.com/public/4/2/4/424e0a68-d17f-4582-be6c-0878436bada6_large/team-brainstorming-session-stockcake.jpg"
+              alt="brainstorming session"
             />
             <div className={styles.blur}></div>
           </div>
