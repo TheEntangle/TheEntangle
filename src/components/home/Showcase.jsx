@@ -3,6 +3,7 @@ import styles from "../../styles/home/Showcase.module.css";
 import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
+import company_1 from "../../assets/com_logo/iit_indore.png"
 
 function Showcase() {
   return (
@@ -19,11 +20,11 @@ function Showcase() {
         </div>
         <div className={styles.head_content_ctr}>
           <JellyTag title="Results" />
-          <h1 className={styles.heading}>Delivering Tangible Results</h1>
+          <h1 className={styles.heading}>The Entangle in Action</h1>
 
           <p className={styles.paragraph}>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod
-            maiores fugit nisi totam delectus doloribus!
+            A glimpse into our journey of innovation, collaboration, and
+            growth—captured in action!
           </p>
           <PrimaryBtn title="Book a 15-min call" />
         </div>
@@ -42,20 +43,22 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://framerusercontent.com/images/JCaZzme2XYHwWAWbEWjb3W3WpE.jpeg"
+              src="https://www.iiti.ac.in/public/storage/pages/September2022/IMG_5256%20(1).JPG"
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img src="" alt="Logo" className={styles.logo} />
-              <span className={styles.showcase_heading}>Raven Company Inc</span>
+              <img src={company_1} alt="Logo" className={styles.logo} width="100px" />
+              <span className={styles.showcase_heading}>
+                IIT Indore – Tech Symposium 2024
+              </span>
               <p className={styles.showcase_paragraph}>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Incidunt, suscipit?
+                The Entangle collaborated with IIT Indore to host a dynamic tech
+                symposium focused on innovation, AI.
               </p>
               <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
+                <span className={styles.jelly_tag}>TechEvent</span>
+                <span className={styles.jelly_tag}>InnovationSummit</span>
               </div>
             </div>
           </div>

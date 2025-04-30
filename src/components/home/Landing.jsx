@@ -14,8 +14,8 @@ function Landing() {
           Empowering innovation, Igniting masterminds
         </h1>
         <p className={styles.paragraph}>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          Reprehenderit explicabo unde animi quo? Cumque, impedit!
+          Building the bridge from potential to performance through innovation
+          and industry-driven learning
         </p>
         <div className={styles.cta_ctr}>
           <NavLink to="/contact" className={styles.primary_btn}>
