@@ -7,6 +7,13 @@ import company_1 from "../../assets/com_logo/iit_indore.png";
 import company_2 from "../../assets/com_logo/medicaps.png";
 import company_3 from "../../assets/com_logo/sage.png";
 import company_4 from "../../assets/com_logo/symbiosis.png";
+import company_5 from "../../assets/com_logo/ips.png";
+import company_6 from "../../assets/com_logo/icfai.png";
+
+import ips_event from "../../assets/showcase/ips_event.jpg"
+import icfai_event from "../../assets/showcase/icfai_event.jpg"
+import womensday_event from "../../assets/showcase/womensday_event.jpg"
+import traingsession from "../../assets/showcase/traingsession.jpg"
 
 function Showcase() {
   return (
@@ -46,23 +53,22 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://www.iiti.ac.in/public/storage/pages/September2022/IMG_5256%20(1).JPG"
+              src={ips_event}
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_1}
+                src={company_5}
                 alt="Logo"
                 className={styles.logo}
                 width="100px"
               />
               <span className={styles.showcase_heading}>
-                IIT Indore – Tech Symposium 2024
+                IPS Academy
               </span>
               <p className={styles.showcase_paragraph}>
-                The Entangle collaborated with IIT Indore to host a dynamic tech
-                symposium focused on innovation, AI.
+                Dr. Nitika vats from department of Training has been invited as chief-guest at IPS Academy, scheduled for February 7-8, 2025.
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>TechEvent</span>
@@ -75,23 +81,22 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://conference.medicaps.ac.in/static/media/newImage1.44f1c0d2e7329160e5cf.jpg"
+              src={icfai_event}
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_2}
+                src={company_6}
                 alt="Logo"
                 className={styles.logo}
                 width="100px"
               />
               <span className={styles.showcase_heading}>
-                Medi-Caps University - IEEE Conference
+                ICFAI University, Jaipur
               </span>
               <p className={styles.showcase_paragraph}>
-                Co-hosted IEEE conference on AI and tech innovations with expert
-                keynotes and paper presentations.
+                Delivered an invited talk and serve as a Session Chair at our conference, scheduled for February 6-7, 2025, at The ICFAI University, Jaipur.
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>IEEE2024</span>
@@ -104,7 +109,7 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://images.shiksha.com/mediadata/images/1522666975phpBeIurs.png"
+              src={womensday_event}
               alt=""
             />
             <div className={styles.dark}></div>
@@ -116,11 +121,11 @@ function Showcase() {
                 width="100px"
               />
               <span className={styles.showcase_heading}>
-                Sage University Indore
+                Sage University, Indore
               </span>
               <p className={styles.showcase_paragraph}>
-                Conducted full-stack development bootcamp with live project
-                demos and student mentorship sessions.
+                Being a woman is in itself a superpower!
+And to celebrate this superpower, SAGE UNIVERSITY, INDORE, like every year, celebrated Women's Day
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>Bootcamp2024</span>
@@ -133,23 +138,22 @@ function Showcase() {
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src="https://www.suas.ac.in/wp-content/uploads/2022/01/Symbiosis-University-Indore-Campus.jpg"
+              src={traingsession}
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_4}
+                
                 alt="Logo"
                 className={styles.logo}
                 width="100px"
               />
               <span className={styles.showcase_heading}>
-                Symbiosis Institute
+                Placement Training
               </span>
               <p className={styles.showcase_paragraph}>
-                Motivational leadership talk encouraging youth to innovate,
-                lead, and embrace change
+                Placement oriented coding questions based on Sorting, searching and data structures
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>20% Conversion Rates</span>

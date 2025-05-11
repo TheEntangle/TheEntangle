@@ -3,8 +3,10 @@ import styles from "../../styles/home/ServiceSec.module.css";
 import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
-import service_icon_1 from "../../assets/service_icon_1.svg";
+// import service_icon_1 from "../../assets/service_icon_1.svg";
 import cta_arrow from "../../assets/cta_arrow.svg";
+
+import 
 
 function ServiceSec() {
   return (
