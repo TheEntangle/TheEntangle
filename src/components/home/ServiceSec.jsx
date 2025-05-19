@@ -3,10 +3,16 @@ import styles from "../../styles/home/ServiceSec.module.css";
 import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
-// import service_icon_1 from "../../assets/service_icon_1.svg";
 import cta_arrow from "../../assets/cta_arrow.svg";
 
-import 
+import coding from "../../assets/icons/coding.png";
+import conf from "../../assets/icons/conf.png";
+import events from "../../assets/icons/events.png";
+import pla from "../../assets/icons/pla.png";
+import pro from "../../assets/icons/pro.png";
+import projects from "../../assets/icons/projects.png";
+import talks from "../../assets/icons/talks.png";
+import training from "../../assets/icons/training.png";
 
 function ServiceSec() {
   return (
@@ -50,7 +56,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={coding} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -69,7 +75,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={training} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -88,7 +94,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={talks} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -107,7 +113,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={events} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -126,7 +132,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={conf} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -145,7 +151,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={projects} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -164,7 +170,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={pro} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
@@ -183,7 +189,7 @@ function ServiceSec() {
           <div className={styles.card}>
             <div className={styles.card_top}>
               <div className={styles.icon}>
-                <img src={service_icon_1} alt="" />
+                <img src={pla} alt="" />
               </div>
               <div className={styles.cta}>
                 <img src={cta_arrow} alt="" />
