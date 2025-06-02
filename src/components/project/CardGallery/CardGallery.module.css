@@ -1,0 +1,158 @@
+.mainGalleryContainer {
+  padding: 0 120px;
+  max-width: 1440px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+
+}
+
+.cardHolder {
+  flex: 1 1 320px;
+  max-width: 100%;
+  border: 1px solid #ffffff3c;
+  border-radius: 1rem;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.card {
+  position: relative;
+  background-color: #11131e;
+  border-radius: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #0c0e1a;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+  height: 100%;
+}
+
+.card:hover {
+  transform: scale(1.01);
+}
+
+.cardImage {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  background-color: #000;
+  border-bottom: 1px solid #222;
+}
+
+.tag {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: linear-gradient(to right, #1a2342, #141929);
+  color: #cdd4f6;
+  font-size: 0.75rem;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+  z-index: 2;
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  margin-top: auto;
+  border-radius: 0.75rem;
+}
+
+.title {
+  font-weight: bold;
+  color: white;
+}
+
+.year {
+  font-size: 0.85rem;
+  background: linear-gradient(to right, #1a2342, #141929);
+  color: #cdd4f6;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.5rem;
+}
+.moreViews{
+  display: flex;
+  justify-content: space-between;
+}
+.moreViewButton {
+  background-color: #0055FE;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  height: 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  text-decoration: none; /* If it's an <a> tag */
+}
+
+/* Hover effect */
+.moreViewButton:hover {
+  background-color: #0046d4;
+  transform: translateY(-2px);
+}
+
+/* Focus accessibility */
+.moreViewButton:focus {
+  outline: 2px solid #90cdf4;
+  outline-offset: 2px;
+}
+
+/* Responsive font size */
+@media screen and (max-width: 480px) {
+  .moreViewButton {
+    font-size: 0.8125rem;
+    padding: 0.4rem 0.75rem;
+  }
+}
+
+
+/* Responsive tweaks */
+@media (max-width: 1024px) {
+  .cardImage {
+    height: 250px;
+  }
+
+  .cardFooter {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .mainGalleryContainer {
+    padding: 1rem 4vw;
+  }
+
+  .cardImage {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .cardHolder {
+    flex: 1 1 100%;
+  }
+
+  .cardImage {
+    height: 180px;
+  }
+}

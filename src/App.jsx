@@ -7,6 +7,7 @@ import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
+import Project from "./pages/Project";
 
 function App() {
   const location = useLocation();
@@ -23,6 +24,8 @@ function App() {
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+
+          <Route path="/project" element={< Project />} />
         </Routes>
       </AnimatePresence>
     </>
