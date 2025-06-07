@@ -7,15 +7,17 @@ import CardGallery from '../components/project/CardGallery/CardGallery'
 import Faq from '../components/Faq'
 import BookApointment from '../components/BookApointment'
 import Footer from '../components/Footer'
+import Landing from '../components/project/Landing'
 
 function Project() {
   return (
     <>
-        <Hero/>
+    <Landing />
+        {/* <Hero/>
         <Analysis/>
         <Problems/>
         <Solution/>
-        <CardGallery/>
+        <CardGallery/> */}
         <Faq/>
         <BookApointment/>
         <Footer />
