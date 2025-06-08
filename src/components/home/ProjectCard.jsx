@@ -14,7 +14,9 @@ function ProjectCard({ project }) {
         <div className={styles.left_content_ctr}>
           <span className={styles.project_title}>{project.heading}</span>
           <span className={styles.dot}></span>
-          <span className={styles.project_date}>2024</span>
+          <span className={styles.project_date}>
+            {project.project_date.split("-")[0]}
+          </span>
         </div>
         <div className={styles.right_content_ctr}>
           {project.tags &&

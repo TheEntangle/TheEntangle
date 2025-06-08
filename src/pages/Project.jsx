@@ -9,12 +9,11 @@ import AboutProject from "../components/project/AboutProject";
 import supabase from "../utils/supabase";
 import { useParams } from "react-router-dom";
 
-
 function Project() {
   const { id } = useParams();
   const [project, setProject] = useState(null);
   const [loading, setLoading] = useState(true);
-useEffect(() => {
+  useEffect(() => {
     async function fetchProject() {
       try {
         const { data, error } = await supabase
@@ -50,22 +49,22 @@ useEffect(() => {
     description: project.description,
     live_link: project.live_link,
     date: project.project_date,
-    category: project.category
-  }
+    category: project.category,
+  };
 
   const thumbnail_data = {
-    thumbnail: project.thumbnail
+    thumbnail: project.thumbnail,
   };
 
   const about_project_data = {
     about: project.sections,
-    images: project.project_images
-  }
+    images: project.project_images,
+  };
 
   return (
     <>
       <Landing data={landing_page_data} />
-      <Thumbnail data={thumbnail_data}  />
+      <Thumbnail data={thumbnail_data} />
       <AboutProject data={about_project_data} />
       <Faq />
       <BookApointment />
