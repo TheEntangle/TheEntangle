@@ -17,7 +17,7 @@ function Landing() {
           Whether you have a question, need assistance, or want to start a new
           project, our team is here to help.
         </p>
-        <PrimaryBtn title="Fill The Form Out!" />
+        <PrimaryBtn path="/contact" title="Fill The Form Out!" />
       </div>
 
       <video
