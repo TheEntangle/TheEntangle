@@ -10,8 +10,8 @@ import company_4 from "../../assets/com_logo/symbiosis.png";
 import company_5 from "../../assets/com_logo/ips.png";
 import company_6 from "../../assets/com_logo/icfai.png";
 
-import ips_event from "../../assets/showcase/ips_event.jpg"
-import icfai_event from "../../assets/showcase/icfai_event.jpg"
+import ips_event from "../../assets/event_photos/e_eight.webp"
+import icfai_event from "../../assets/event_photos/e_five.webp"
 import womensday_event from "../../assets/showcase/womensday_event.jpg"
 import traingsession from "../../assets/showcase/traingsession.jpg"
 

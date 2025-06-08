@@ -48,4 +48,16 @@
   .bottom {
     display: none;
   }
+  .image_slide_ctr{
+    animation: scroll_two 60s linear infinite;
+  }
+}
+
+@keyframes scroll_two {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-1000%);
+  }
 }
