@@ -1,7 +1,7 @@
 .project_card {
   position: relative;
   width: 100%;
-  height: 70vh;
+  height: auto;
   border: 1px solid var(--white-12);
   padding: 10px;
   border-radius: 18px;
@@ -64,14 +64,10 @@
   color: var(--white-60);
 }
 /* Media Queries */
-@media screen and (max-width: 1200px) {
-  
-  .project_card {
-    height: 60vh;
-  }
-}
-
 @media (max-width: 630px) {
+  .project_title{
+    font-size: 14px;
+  }
   .left_content_ctr {
     padding: 0;
     border: none;

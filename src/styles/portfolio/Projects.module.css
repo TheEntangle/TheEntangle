@@ -37,13 +37,13 @@
 
   .cards_ctr {
     grid-template-columns: 1fr;
-    gap: 15px;
+    gap: 2rem;
   }
 }
 
 @media screen and (max-width: 480px) {
   .project_section {
     padding: 2rem 1rem;
-    margin-top: -4rem;
+    margin-top: -10rem;
   }
 }
