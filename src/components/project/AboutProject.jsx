@@ -1,42 +1,80 @@
 import React from "react";
 import styles from "../../styles/project/AboutProject.module.css";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
+import rehypeRaw from "rehype-raw";
+import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
+import { materialDark } from "react-syntax-highlighter/dist/esm/styles/prism";
+import { useParams } from "react-router-dom";
 
-function AboutProject() {
+function AboutProject({ data }) {
+  const { about,images } = data;
+
   return (
     <section className={styles.project_details_section}>
-      <div className={styles.project_details_content_ctr}>
-        <h2 className={styles.heading}>
-          Analysis - Performance and Responsiveness
-        </h2>
-        <div className={styles.seperator}></div>
-        <p className={styles.paragraph}>
-          We prioritize optimal performance and seamless responsiveness across
-          all devices. Our approach ensures fast loading times and smooth
-          navigation, providing an excellent user experience on both desktop and
-          mobile.
-        </p>
-        <h2 className={styles.heading}>Performance</h2>
-        <div className={styles.seperator}></div>
-        <p className={styles.paragraph}>
-          • Fast Loading Speed: We optimize images, scripts, and resources to
-          ensure quick load times. • Optimized Code: Clean and efficient coding
-          practices are employed to reduce unnecessary elements. •
-          Scalability:Our performance-focused design ensures your website can
-          handle increased traffic.
-        </p>
+      <div className={styles.project_details_container}>
+        {about &&
+          about.length > 0 &&
+          about.map((section, index) => (
+            <div className={styles.project_details_content_ctr} key={index}>
+              <h2 className={styles.heading}>{section.heading}</h2>
+              <div className={styles.seperator}></div>
+              <div className={styles.paragraph}>
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  rehypePlugins={[rehypeRaw]}
+                  components={{
+                    code({ node, inline, className, children, ...props }) {
+                      const match = /language-(\w+)/.exec(className || "");
+                      return !inline && match ? (
+                        <SyntaxHighlighter
+                          style={materialDark}
+                          language={match[1]}
+                          PreTag="div"
+                          {...props}
+                        >
+                          {String(children).replace(/\n$/, "")}
+                        </SyntaxHighlighter>
+                      ) : (
+                        <code className={className} {...props}>
+                          {children}
+                        </code>
+                      );
+                    },
+                    table: ({ node, ...props }) => (
+                      <div className={styles.table_container}>
+                        <table {...props} />
+                      </div>
+                    ),
+                    img: ({ node, ...props }) => (
+                      <img
+                        {...props}
+                        style={{
+                          maxWidth: "100%",
+                          height: "auto",
+                          display: "inline-block",
+                        }}
+                      />
+                    ),
+                  }}
+                >
+                  {section.content}
+                </ReactMarkdown>
+              </div>
+            </div>
+          ))}
       </div>
+
       <div className={styles.project_images_ctr}>
         <div className={styles.image_scroller}>
-          <img
-            src="https://cscyurwvfnkhzbmupqum.supabase.co/storage/v1/object/public/projects/projectImages/fenton_website_ui.webp"
-            alt="Performance Optimization"
-            className={styles.project_image}
-          />
-          <img
-            src="https://cscyurwvfnkhzbmupqum.supabase.co/storage/v1/object/public/projects/projectImages/fenton_home.webp"
-            alt="Performance Optimization"
-            className={styles.project_image}
-          />
+          {images.map((imageUrl,index) => (
+            <img
+                  key={index}
+                  src={imageUrl}
+                  alt="Project Screenshot"
+                  className={styles.project_image}
+                />
+          ))}
         </div>
       </div>
     </section>

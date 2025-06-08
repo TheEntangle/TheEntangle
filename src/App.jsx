@@ -24,8 +24,7 @@ function App() {
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
-
-          <Route path="/project" element={< Project />} />
+          <Route path="/project/:id" element={<Project />} />
         </Routes>
       </AnimatePresence>
     </>
