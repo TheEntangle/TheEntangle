@@ -4,7 +4,7 @@ import landing_video from "../../assets/landing_bg.mp4";
 import clients_img from "../../assets/clients_strip.webp";
 import hero_img from "../../assets/nitika_mam.webp";
 import { shine } from "../../assets/icons";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 function Landing() {
   return (
@@ -21,9 +21,9 @@ function Landing() {
           <NavLink to="/contact" className={styles.primary_btn}>
             Connect with us
           </NavLink>
-          <a href="" className={styles.secondary_btn}>
+          <Link to="/about" className={styles.secondary_btn}>
             What is Entangle?
-          </a>
+          </Link>
         </div>
         <div className={styles.logo_ctr}>
           <div className={styles.slider}>

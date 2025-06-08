@@ -36,7 +36,7 @@ function Showcase() {
             From inspiring talks to hands-on workshops, explore highlights from
             our recent events and experiences!
           </p>
-          <PrimaryBtn title="Book a 15-min call" />
+          <PrimaryBtn path="/contact" title="Book a 15-min call" />
         </div>
         <div
           className={`${styles.element_details_ctr_right} ${styles.element_details_ctr}`}
@@ -59,10 +59,9 @@ function Showcase() {
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_5}
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4D-JolKdQRJwAvRcQlFYozClAmClPMd42A&s"
                 alt="Logo"
                 className={styles.logo}
-                width="100px"
               />
               <span className={styles.showcase_heading}>
                 IPS Academy
@@ -87,10 +86,9 @@ function Showcase() {
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_6}
+                src="https://upload.wikimedia.org/wikipedia/commons/2/24/ICFAI_University_Tripura.png"
                 alt="Logo"
                 className={styles.logo}
-                width="100px"
               />
               <span className={styles.showcase_heading}>
                 ICFAI University, Jaipur
@@ -115,10 +113,9 @@ function Showcase() {
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                src={company_3}
+                src="https://cdn.universitykart.com//Content/upload/admin/gjmrzjqu.jr1.jpg"
                 alt="Logo"
                 className={styles.logo}
-                width="100px"
               />
               <span className={styles.showcase_heading}>
                 Sage University, Indore
@@ -144,10 +141,9 @@ And to celebrate this superpower, SAGE UNIVERSITY, INDORE, like every year, cele
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
               <img
-                
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLw2ytI3MFQ2OYY1tGQ4DBPW4jmt4lfDKTA&s"
                 alt="Logo"
                 className={styles.logo}
-                width="100px"
               />
               <span className={styles.showcase_heading}>
                 Placement Training

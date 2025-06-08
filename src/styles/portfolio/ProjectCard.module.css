@@ -131,6 +131,9 @@
 }
 
 @media screen and (max-width: 480px) {
+  .title {
+    font-size: 14px;
+  }
   .card {
     padding: 8px;
     border-radius: 20px;

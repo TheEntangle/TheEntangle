@@ -5,10 +5,12 @@ import TheEdge from "../components/TheEdge";
 import BookApointment from "../components/BookApointment";
 import Footer from "../components/Footer";
 import PageTransition from "../components/PageTransition";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Portfolio() {
   return (
     <PageTransition>
+      <ScrollToTop />
       <Landing />
       <Projects />
       <TheEdge />

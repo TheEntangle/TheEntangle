@@ -40,7 +40,7 @@ function ServiceSec() {
               Empowering individuals and organizations through tailored
               training, tech, and development services.
             </p>
-            <PrimaryBtn title="Explore services" />
+            <PrimaryBtn path="/" title="Explore services" />
           </div>
           <div
             className={`${styles.element_details_ctr_right} ${styles.element_details_ctr}`}
@@ -68,7 +68,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              We craft innovative digital products tailored to real-world needs and user experiences.
+                We craft innovative digital products tailored to real-world
+                needs and user experiences.
               </p>
             </div>
           </div>
@@ -87,7 +88,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Upskill with hands-on learning programs designed to boost your professional and technical capabilities.
+                Upskill with hands-on learning programs designed to boost your
+                professional and technical capabilities.
               </p>
             </div>
           </div>
@@ -106,7 +108,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Inspire personal growth and unlock inner potential through expert-led, empowering sessions.
+                Inspire personal growth and unlock inner potential through
+                expert-led, empowering sessions.
               </p>
             </div>
           </div>
@@ -125,7 +128,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Engage with latest tech trends, ideas, and peers through dynamic, interactive events.
+                Engage with latest tech trends, ideas, and peers through
+                dynamic, interactive events.
               </p>
             </div>
           </div>
@@ -139,12 +143,15 @@ function ServiceSec() {
               </div>
             </div>
             <div className={styles.card_heading_ctr}>
-              <h4 className={styles.card_heading_1}>Conferences & Symposiums</h4>
+              <h4 className={styles.card_heading_1}>
+                Conferences & Symposiums
+              </h4>
               <span className={styles.card_heading_2}>Thought Leadership</span>
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Connect with experts, present ideas, and stay ahead with our impactful academic gatherings.
+                Connect with experts, present ideas, and stay ahead with our
+                impactful academic gatherings.
               </p>
             </div>
           </div>
@@ -158,12 +165,15 @@ function ServiceSec() {
               </div>
             </div>
             <div className={styles.card_heading_ctr}>
-              <h4 className={styles.card_heading_1}>Skill Projects (Govt/MSME)</h4>
+              <h4 className={styles.card_heading_1}>
+                Skill Projects (Govt/MSME)
+              </h4>
               <span className={styles.card_heading_2}>Career Growth</span>
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Participate in industry-linked, government-backed projects focused on employability and future skills.
+                Participate in industry-linked, government-backed projects
+                focused on employability and future skills.
               </p>
             </div>
           </div>
@@ -182,7 +192,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              Work on live industry projects to gain practical knowledge and experience.
+                Work on live industry projects to gain practical knowledge and
+                experience.
               </p>
             </div>
           </div>
@@ -201,7 +212,8 @@ function ServiceSec() {
             </div>
             <div className={styles.card_paragraph_ctr}>
               <p className={styles.card_paragraph}>
-              We connect talent to top companies through our dedicated placement support and partnerships.
+                We connect talent to top companies through our dedicated
+                placement support and partnerships.
               </p>
             </div>
           </div>

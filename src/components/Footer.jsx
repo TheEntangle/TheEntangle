@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/Footer.module.css";
 import JellyTag from "./JellyTag";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -34,16 +35,16 @@ function Footer() {
             <span className={styles.link_heading}>Main Pages</span>
             <ul className={styles.links_list}>
               <li>
-                <a href="">Home</a>
+                <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="">Projects</a>
+                <Link to="/portfolio">Projects</Link>
               </li>
               <li>
-                <a href="">Contact</a>
+                <Link to="/contact">Contact</Link>
               </li>
             </ul>
           </div>

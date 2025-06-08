@@ -19,7 +19,7 @@ function BookApointment() {
             Ready to take the next step? Join us now and start transforming your
             vision into reality with expert support.
           </p>
-          <PrimaryBtn title="Book an Appointment" />
+          <PrimaryBtn path="/contact" title="Book an Appointment" />
         </div>
         <video
           className={styles.card_bg}

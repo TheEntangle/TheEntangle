@@ -8,6 +8,8 @@ import AboutProject from "../components/project/AboutProject";
 
 import supabase from "../utils/supabase";
 import { useParams } from "react-router-dom";
+import ScrollToTop from "../components/ScrollToTop";
+import PageTransition from "../components/PageTransition";
 
 function Project() {
   const { id } = useParams();
@@ -62,14 +64,15 @@ function Project() {
   };
 
   return (
-    <>
+    <PageTransition>
+      <ScrollToTop />
       <Landing data={landing_page_data} />
       <Thumbnail data={thumbnail_data} />
       <AboutProject data={about_project_data} />
       <Faq />
       <BookApointment />
       <Footer />
-    </>
+    </PageTransition>
   );
 }
 

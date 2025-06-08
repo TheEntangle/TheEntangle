@@ -50,7 +50,7 @@ function AboutEntangle() {
             </span>
           </li>
         </ul>
-        <PrimaryBtn title="View About Entangle" path="/about" />
+        <PrimaryBtn title="View About Entangle" path="/" />
       </div>
     </section>
   );

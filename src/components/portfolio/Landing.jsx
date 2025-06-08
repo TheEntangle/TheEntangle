@@ -17,7 +17,7 @@ function Landing() {
           WheFrom startups to established brands, we create tailored solutions
           that drive success and make a real impact.
         </p>
-        <PrimaryBtn title="Build your product!" />
+        <PrimaryBtn path="/contact" title="Build your product!" />
       </div>
 
       <video

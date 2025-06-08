@@ -7,6 +7,9 @@
   border-radius: 18px;
   cursor: url("../../assets/cursor.png"), auto;
 }
+.project_card:hover .project_img{
+  transform: scale(1.01);
+}
 .project_img {
   width: 100%;
   height: 100%;
@@ -14,6 +17,7 @@
   object-position: center center;
   border: 1px solid var(--white-12);
   border-radius: 12px;
+  transition: transform 0.5s ease-in-out;
 }
 .content_ctr {
   position: absolute;

@@ -53,7 +53,7 @@ function Portfolio() {
               Bringing bold concepts to life through purposeful design,
               development, and innovation.
             </p>
-            <PrimaryBtn title="View Portfolio" />
+            <PrimaryBtn path="/portfolio" title="View Portfolio" />
           </div>
           <div
             className={`${styles.element_details_ctr_right} ${styles.element_details_ctr}`}
