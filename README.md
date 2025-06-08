@@ -24,7 +24,7 @@ HOME PAGE
 11. Book an appointment to contact page ✅
 
 ABOUT PAGE
-1. Connect with us to contact page
+1. Connect with us to contact page ✅
 2. Showreel bnana hai
 3. View about entangle can to Entangle in action to project page
 4. images lgana hai
