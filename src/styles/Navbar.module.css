@@ -126,3 +126,8 @@
     transform: scale(0.8);
   }
 }
+@media (max-width: 380px) {
+  .nav_logo{
+    width: 140px;
+  }
+}

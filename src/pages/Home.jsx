@@ -16,15 +16,18 @@ function Home() {
   return (
     <PageTransition>
       <Landing />
-      <AboutEntangle />
+      <ServiceSec />
+      <Portfolio />
       <Showcase />
+      
       <TheEdge />
       <Working />
-      <ServiceSec />
+      
       <Gallary />
-      <Portfolio />
+      
       <TheEdge />
       <Faq />
+      <AboutEntangle />
       <BookApointment />
       <Footer />
     </PageTransition>

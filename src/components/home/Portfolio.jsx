@@ -17,6 +17,7 @@ function Portfolio() {
       const { data, error } = await supabase
         .from("projects")
         .select()
+        .eq("category", "Coding and Development")
         .order("project_date", { ascending: false }) // Get latest projects first
         .limit(4); // Limit to 4 projects
 

@@ -2,6 +2,7 @@ import React from "react";
 import styles from "../styles/Footer.module.css";
 import JellyTag from "./JellyTag";
 import { Link } from "react-router-dom";
+import logo from "../assets/logo.svg"
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
       <div className={styles.top}>
         <div className={styles.left}>
           <a className={styles.logo} href="#">
-            The Entangle
+            <img src={logo} alt="" />
           </a>
           <span className={styles.credit}>
             Made with 💙 by <strong>Arin Bagul</strong> <br /> from{" "}

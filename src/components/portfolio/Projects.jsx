@@ -35,6 +35,7 @@ function Projects() {
         const { data, error } = await supabase
           .from("projects")
           .select()
+          .eq("category", "Coding and Development")
           .order("project_date", { ascending: false });
 
         if (error) throw error;

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "../styles/Navbar.module.css";
 import "../styles/Navbar.css";
+import logo from "../assets/logo.svg"
 
 import PrimaryBtn from "./PrimaryBtn";
 import { Link, NavLink } from "react-router-dom";
@@ -21,7 +22,7 @@ function Navbar() {
   return (
     <nav className={`${styles.navbar} ${isMenuOpen ? "active" : ""} navbar`}>
       <div className={styles.logo_ctr}>
-        <NavLink to="/">TheEntangle</NavLink>
+        <NavLink to="/"><img className={styles.nav_logo} src={logo} alt="" /></NavLink>
       </div>
       <ul className={`${styles.nav_links} nav_links`}>
         <li>

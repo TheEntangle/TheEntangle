@@ -87,3 +87,23 @@ select {
 .italic {
   font-style: italic;
 }
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  /* width: 100%;
+  height: 100%;
+  background-color: red; */
+}
+.embla__slide__img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
