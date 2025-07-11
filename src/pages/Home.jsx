@@ -18,12 +18,12 @@ function Home() {
       <Landing />
       <ServiceSec />
       <Portfolio />
-      <Showcase />
+      {/* <Showcase /> */}
       
       <TheEdge />
       <Working />
       
-      <Gallary />
+      {/* <Gallary /> */}
       
       <TheEdge />
       <Faq />
