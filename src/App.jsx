@@ -5,6 +5,7 @@ import Services from "./pages/Services";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import Portfolio from "./pages/Portfolio";
+import CourseReg from "./pages/CourseReg";
 import { AnimatePresence } from "framer-motion";
 import { Route, Routes, useLocation } from "react-router-dom";
 import Project from "./pages/Project";
@@ -20,6 +21,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/service" element={<Services />} />
           <Route path="/services" element={<Services />} />
+          <Route path="/course/registration/:id" element={<CourseReg />} />
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/about" element={<About />} />

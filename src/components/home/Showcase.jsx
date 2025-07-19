@@ -3,19 +3,35 @@ import styles from "../../styles/home/Showcase.module.css";
 import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
-import company_1 from "../../assets/com_logo/iit_indore.png";
-import company_2 from "../../assets/com_logo/medicaps.png";
-import company_3 from "../../assets/com_logo/sage.png";
-import company_4 from "../../assets/com_logo/symbiosis.png";
-import company_5 from "../../assets/com_logo/ips.png";
-import company_6 from "../../assets/com_logo/icfai.png";
 
-import ips_event from "../../assets/event_photos/e_eight.webp"
-import icfai_event from "../../assets/event_photos/e_five.webp"
-import womensday_event from "../../assets/showcase/womensday_event.jpg"
-import traingsession from "../../assets/showcase/traingsession.jpg"
+import class_photo_1 from "../../assets/event_photos/1.jpg"
+import class_photo_2 from "../../assets/event_photos/2.jpg"
+import class_photo_3 from "../../assets/event_photos/3.jpg"
+import class_photo_4 from "../../assets/event_photos/4.jpg"
+import class_photo_5 from "../../assets/event_photos/5.jpg"
+import class_photo_6 from "../../assets/event_photos/6.jpg"
+import class_photo_8 from "../../assets/event_photos/8.jpg"
+import class_photo_9 from "../../assets/event_photos/9.jpg"
+import class_photo_10 from "../../assets/event_photos/10.jpg"
+import class_photo_11 from "../../assets/event_photos/11.jpg"
+import class_photo_12 from "../../assets/event_photos/12.jpg"
+
 
 function Showcase() {
+  const photos = [
+    class_photo_9,
+    class_photo_10,
+    class_photo_11,
+    class_photo_12,
+    class_photo_1,
+    class_photo_2,
+    class_photo_3,
+    // class_photo_4,
+    class_photo_5,
+    // class_photo_6,
+    // class_photo_8,
+  ]
+
   return (
     <section className={styles.showcase_section}>
       <div className={styles.head_ctr}>
@@ -49,115 +65,43 @@ function Showcase() {
         </div>
       </div>
       <div className={styles.showcase_slides_ctr}>
-        <div className={styles.showcase_card}>
+
+        {photos.map((photo, index) => (
+
+          <div className={styles.showcase_card}>
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src={ips_event}
+              src={photo}
               alt=""
             />
             <div className={styles.dark}></div>
             <div className={styles.showcase_content_ctr}>
-              <img
+              {/* <img
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSk4D-JolKdQRJwAvRcQlFYozClAmClPMd42A&s"
                 alt="Logo"
                 className={styles.logo}
-              />
+              /> */}
               <span className={styles.showcase_heading}>
-                IPS Academy
+                TAVISHI 1.0
               </span>
               <p className={styles.showcase_paragraph}>
-                Dr. Nitika vats from department of Training has been invited as chief-guest at IPS Academy, scheduled for February 7-8, 2025.
+                A successful event at SAGE University, Indore, where we engaged
+                students with our innovative approach to education and
+                entrepreneurship.
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>TechEvent</span>
-                <span className={styles.jelly_tag}>InnovationSummit</span>
+                <span className={styles.jelly_tag}>Hackathon</span>
               </div>
             </div>
           </div>
         </div>
-        <div className={styles.showcase_card}>
-          <div className={styles.showcase_img_ctr}>
-            <img
-              className={styles.showcase_img}
-              src={icfai_event}
-              alt=""
-            />
-            <div className={styles.dark}></div>
-            <div className={styles.showcase_content_ctr}>
-              <img
-                src="https://upload.wikimedia.org/wikipedia/commons/2/24/ICFAI_University_Tripura.png"
-                alt="Logo"
-                className={styles.logo}
-              />
-              <span className={styles.showcase_heading}>
-                ICFAI University, Jaipur
-              </span>
-              <p className={styles.showcase_paragraph}>
-                Delivered an invited talk and serve as a Session Chair at our conference, scheduled for February 6-7, 2025, at The ICFAI University, Jaipur.
-              </p>
-              <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>IEEE2024</span>
-                <span className={styles.jelly_tag}>ResearchDriven</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.showcase_card}>
-          <div className={styles.showcase_img_ctr}>
-            <img
-              className={styles.showcase_img}
-              src={womensday_event}
-              alt=""
-            />
-            <div className={styles.dark}></div>
-            <div className={styles.showcase_content_ctr}>
-              <img
-                src="https://cdn.universitykart.com//Content/upload/admin/gjmrzjqu.jr1.jpg"
-                alt="Logo"
-                className={styles.logo}
-              />
-              <span className={styles.showcase_heading}>
-                Sage University, Indore
-              </span>
-              <p className={styles.showcase_paragraph}>
-                Being a woman is in itself a superpower!
-And to celebrate this superpower, SAGE UNIVERSITY, INDORE, like every year, celebrated Women's Day
-              </p>
-              <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>Bootcamp2024</span>
-                <span className={styles.jelly_tag}>SkillUp</span>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.showcase_card}>
-          <div className={styles.showcase_img_ctr}>
-            <img
-              className={styles.showcase_img}
-              src={traingsession}
-              alt=""
-            />
-            <div className={styles.dark}></div>
-            <div className={styles.showcase_content_ctr}>
-              <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQyLw2ytI3MFQ2OYY1tGQ4DBPW4jmt4lfDKTA&s"
-                alt="Logo"
-                className={styles.logo}
-              />
-              <span className={styles.showcase_heading}>
-                Placement Training
-              </span>
-              <p className={styles.showcase_paragraph}>
-                Placement oriented coding questions based on Sorting, searching and data structures
-              </p>
-              <div className={styles.jelly_tag_ctr}>
-                <span className={styles.jelly_tag}>20% Conversion Rates</span>
-                <span className={styles.jelly_tag}>50% Reduced in CPA</span>
-              </div>
-            </div>
-          </div>
-        </div>
+
+        ))}
+
+        
+        
       </div>
     </section>
   );

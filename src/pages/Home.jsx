@@ -16,9 +16,9 @@ function Home() {
   return (
     <PageTransition>
       <Landing />
+      <Showcase />
       <ServiceSec />
       <Portfolio />
-      {/* <Showcase /> */}
       
       <TheEdge />
       <Working />
