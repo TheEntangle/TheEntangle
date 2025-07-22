@@ -2,6 +2,7 @@ import React, { useState, useRef } from "react";
 import { useParams } from "react-router-dom";
 import styles from "../../styles/conatct/Form.module.css";
 import { BadgeCheck } from "lucide-react";
+import js from "@eslint/js";
 
 function Form() {
   const form = useRef();
@@ -53,8 +54,9 @@ function Form() {
   e.preventDefault();
   setFormStatus({ submitting: true, submitted: false, error: null });
 
-  const webAppUrl = "https://script.google.com/macros/s/AKfycbxQ5P-KChSEHefOpWB5jP4P504lZnHaofkXgQhwHunT2O06Wvlkp9aeG2RVA6c1ESXm-Q/exec"; // your Web App URL
+  const webAppUrl = "https://script.google.com/macros/s/AKfycbxYbZ1kQFnHBpfXdhEaYRCPri334QFNq1VuJ7a3KbWV5UGvqmkQR_r1lm5ottK5M9__/exec"; // your Web App URL
 
+  console.log("Submitting form with data:", JSON.stringify(formData));
   try {
     const response = await fetch(webAppUrl, {
       method: "POST",
