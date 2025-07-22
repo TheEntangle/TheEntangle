@@ -12,7 +12,7 @@ function Form() {
     "dsa",
     "web-dev-foundation",
     "mern-stack",
-    "cybersecurity-event"
+    "cybersecurity-event",
   ];
 
   const [formData, setFormData] = useState({
@@ -22,13 +22,13 @@ function Form() {
     mobileNumber: "",
     course: courseOptions.includes(id) ? id : "",
     college: "",
-    message: ""
+    message: "",
   });
 
   const [formStatus, setFormStatus] = useState({
     submitting: false,
     submitted: false,
-    error: null
+    error: null,
   });
 
   const handleChange = (e) => {
@@ -41,55 +41,54 @@ function Form() {
       email: "email",
       courses: "course",
       college: "college",
-      message: "message"
+      message: "message",
     };
 
     setFormData({
       ...formData,
-      [fieldMap[id]]: value
+      [fieldMap[id]]: value,
     });
   };
 
+  const url =
+    "https://script.google.com/macros/s/AKfycbwRbZRIvGI11u0xaB9wEVE5OqoxSr1Qzot2xFvLvD6MvNb7ih6oqFuC287cEmabutqKyQ/exec";
+
   const handleSubmit = async (e) => {
-  e.preventDefault();
-  setFormStatus({ submitting: true, submitted: false, error: null });
+    e.preventDefault();
+    setFormStatus({ submitting: true, submitted: false, error: null });
 
-  const webAppUrl = "https://script.google.com/macros/s/AKfycbxYbZ1kQFnHBpfXdhEaYRCPri334QFNq1VuJ7a3KbWV5UGvqmkQR_r1lm5ottK5M9__/exec"; // your Web App URL
+    try {
+      await fetch(url, {
+        method: "POST",
+        mode: "no-cors",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
 
-  console.log("Submitting form with data:", JSON.stringify(formData));
-  try {
-    const response = await fetch(webAppUrl, {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify(formData)
-    });
-
-    const result = await response.json();
-    
-    if (result.result === "success") {
+      // Since no-cors doesn't return readable response, assume success
       setFormStatus({ submitting: false, submitted: true, error: null });
+
       setFormData({
         firstName: "",
         lastName: "",
         email: "",
         mobileNumber: "",
-        course: "",
+        course: courseOptions.includes(id) ? id : "",
         college: "",
-        message: ""
+        message: "",
       });
-    } else {
-      throw new Error(result.error || "Unknown error");
+    } catch (error) {
+      console.error("Submission Error:", error);
+      setFormStatus({
+        submitting: false,
+        submitted: false,
+        error:
+          "Something went wrong while submitting the form. Please try again.",
+      });
     }
-  } catch (err) {
-    setFormStatus({
-      submitting: false,
-      submitted: false,
-      error: "Something went wrong. Please try again."
-    });
-  }
-};
+  };
 
   return (
     <section className={styles.form_section}>
@@ -100,12 +99,17 @@ function Form() {
               <BadgeCheck className={styles.checkIcon} />
               <h3 className={styles.sm_heading}>Registration Successful!</h3>
               <p className={styles.sm_paragraph}>
-                We've received your registration and will get back to you shortly.
+                We've received your registration and will get back to you
+                shortly.
               </p>
               <button
                 className={styles.submitButton}
                 onClick={() =>
-                  setFormStatus({ submitting: false, submitted: false, error: null })
+                  setFormStatus({
+                    submitting: false,
+                    submitted: false,
+                    error: null,
+                  })
                 }
               >
                 Send Another Message
@@ -187,8 +191,12 @@ function Form() {
                   onChange={handleChange}
                   required
                 >
-                  <option value="" className="form-option">Select a course</option>
-                  <option value="dsa" className="form-option">DSA with C++</option>
+                  <option value="" className="form-option">
+                    Select a course
+                  </option>
+                  <option value="dsa" className="form-option">
+                    DSA with C++
+                  </option>
                   <option value="web-dev-foundation" className="form-option">
                     Web Development Foundation (HTML, CSS, JS)
                   </option>
