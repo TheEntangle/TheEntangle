@@ -32,6 +32,8 @@ function Showcase() {
     // class_photo_8,
   ]
 
+  
+
   return (
     <section className={styles.showcase_section}>
       <div className={styles.head_ctr}>

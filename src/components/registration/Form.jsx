@@ -1,19 +1,29 @@
 import React, { useState, useRef } from "react";
-import emailjs from "@emailjs/browser";
+import { useParams } from "react-router-dom";
 import styles from "../../styles/conatct/Form.module.css";
-import { email, phone, location } from "../../assets/contact_icons";
-import { BadgeCheck } from 'lucide-react';
+import { BadgeCheck } from "lucide-react";
 
 function Form() {
   const form = useRef();
+  const { id } = useParams();
+
+  const courseOptions = [
+    "dsa",
+    "web-dev-foundation",
+    "mern-stack",
+    "cybersecurity-event"
+  ];
+
   const [formData, setFormData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     mobileNumber: "",
-    companyType: "",
+    course: courseOptions.includes(id) ? id : "",
+    college: "",
     message: ""
   });
+
   const [formStatus, setFormStatus] = useState({
     submitting: false,
     submitted: false,
@@ -22,64 +32,79 @@ function Form() {
 
   const handleChange = (e) => {
     const { id, value } = e.target;
+
+    const fieldMap = {
+      "first-name": "firstName",
+      "last-name": "lastName",
+      mobileNumber: "mobileNumber",
+      email: "email",
+      courses: "course",
+      college: "college",
+      message: "message"
+    };
+
     setFormData({
       ...formData,
-      [id === "first-name" ? "firstName" : 
-       id === "last-name" ? "lastName" : 
-       id === "mobileNumber" ? "mobileNumber" : 
-       id === "service" ? "companyType" : id]: value
+      [fieldMap[id]]: value
     });
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    setFormStatus({ ...formStatus, submitting: true });
+  const handleSubmit = async (e) => {
+  e.preventDefault();
+  setFormStatus({ submitting: true, submitted: false, error: null });
 
-    // Replace these with your actual EmailJS service ID, template ID, and user ID
-    const serviceId = "service_z3j06za";
-    const templateId = "template_9bgmee6";
-    const userId = "X_3WrrLkyKv8oDCz9";
+  const webAppUrl = "https://script.google.com/macros/s/AKfycbxQ5P-KChSEHefOpWB5jP4P504lZnHaofkXgQhwHunT2O06Wvlkp9aeG2RVA6c1ESXm-Q/exec"; // your Web App URL
 
-    emailjs.sendForm(serviceId, templateId, form.current, userId)
-      .then((result) => {
-        console.log("Email sent successfully:", result.text);
-        setFormStatus({
-          submitting: false,
-          submitted: true,
-          error: null
-        });
-        // Reset form fields
-        setFormData({
-          firstName: "",
-          lastName: "",
-          email: "",
-          mobileNumber: "",
-          companyType: "",
-          message: ""
-        });
-      }, (error) => {
-        console.error("Failed to send email:", error.text);
-        setFormStatus({
-          submitting: false,
-          submitted: false,
-          error: "Failed to send message. Please try again."
-        });
+  try {
+    const response = await fetch(webAppUrl, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(formData)
+    });
+
+    const result = await response.json();
+    
+    if (result.result === "success") {
+      setFormStatus({ submitting: false, submitted: true, error: null });
+      setFormData({
+        firstName: "",
+        lastName: "",
+        email: "",
+        mobileNumber: "",
+        course: "",
+        college: "",
+        message: ""
       });
-  };
+    } else {
+      throw new Error(result.error || "Unknown error");
+    }
+  } catch (err) {
+    setFormStatus({
+      submitting: false,
+      submitted: false,
+      error: "Something went wrong. Please try again."
+    });
+  }
+};
 
   return (
     <section className={styles.form_section}>
       <div className={styles.container}>
-        {/* Left Side - Contact Form */}
         <div className={styles.formWrapper}>
           {formStatus.submitted ? (
             <div className={styles.successMessage}>
               <BadgeCheck className={styles.checkIcon} />
               <h3 className={styles.sm_heading}>Registration Successful!</h3>
-              <p className={styles.sm_paragraph}>We've received your registration and will get back to you shortly.</p>
-              <button 
+              <p className={styles.sm_paragraph}>
+                We've received your registration and will get back to you shortly.
+              </p>
+              <button
                 className={styles.submitButton}
-                onClick={() => setFormStatus({ submitting: false, submitted: false, error: null })}
+                onClick={() =>
+                  setFormStatus({ submitting: false, submitted: false, error: null })
+                }
               >
                 Send Another Message
               </button>
@@ -87,18 +112,15 @@ function Form() {
           ) : (
             <form ref={form} className={styles.form} onSubmit={handleSubmit}>
               {formStatus.error && (
-                <div className={styles.errorMessage}>
-                  {formStatus.error}
-                </div>
+                <div className={styles.errorMessage}>{formStatus.error}</div>
               )}
               <div className={styles.row}>
                 <div className={styles.fieldGroup}>
-                  <label className={styles.label} htmlFor="first-name">
+                  <label htmlFor="first-name" className={styles.label}>
                     First name*
                   </label>
                   <input
                     id="first-name"
-                    name="firstName"
                     type="text"
                     placeholder="Tony"
                     className={styles.input}
@@ -108,12 +130,11 @@ function Form() {
                   />
                 </div>
                 <div className={styles.fieldGroup}>
-                  <label className={styles.label} htmlFor="last-name">
-                    Last Name*
+                  <label htmlFor="last-name" className={styles.label}>
+                    Last name*
                   </label>
                   <input
                     id="last-name"
-                    name="lastName"
                     type="text"
                     placeholder="Stark"
                     className={styles.input}
@@ -126,63 +147,81 @@ function Form() {
 
               <div className={styles.row}>
                 <div className={styles.fieldGroup}>
-                  <label className={styles.label} htmlFor="mobileNumber">
+                  <label htmlFor="mobileNumber" className={styles.label}>
                     Wanna share your Phone no?*
                   </label>
-                  <input 
+                  <input
                     id="mobileNumber"
-                    name="mobileNumber"
                     placeholder="Phone no."
                     className={styles.input}
                     value={formData.mobileNumber}
                     onChange={handleChange}
                     required
                   />
-                  
                 </div>
                 <div className={styles.fieldGroup}>
-                  <label className={styles.label} htmlFor="mobileNumber">
+                  <label htmlFor="email" className={styles.label}>
                     How can we reach you?*
                   </label>
-                  <input 
+                  <input
                     id="email"
-                    name="email"
                     placeholder="Email address"
                     className={styles.input}
                     value={formData.email}
                     onChange={handleChange}
                     required
                   />
-                  
                 </div>
-                
               </div>
 
               <div className={styles.fieldGroup}>
-                <label className={styles.label} htmlFor="college">
+                <label htmlFor="courses" className={styles.label}>
+                  Which course you want to enroll?*
+                </label>
+                <select
+                  id="courses"
+                  className={`${styles.input}`}
+                  value={formData.course}
+                  onChange={handleChange}
+                  required
+                >
+                  <option value="" className="form-option">Select a course</option>
+                  <option value="dsa" className="form-option">DSA with C++</option>
+                  <option value="web-dev-foundation" className="form-option">
+                    Web Development Foundation (HTML, CSS, JS)
+                  </option>
+                  <option value="mern-stack" className="form-option">
+                    MERN Stack Web Development (MongoDB, Express, React, Node)
+                  </option>
+                  <option value="cybersecurity-event" className="form-option">
+                    Cybersecurity Event/Meet-up powered by ZenVoyager
+                  </option>
+                </select>
+              </div>
+
+              <div className={styles.fieldGroup}>
+                <label htmlFor="college" className={styles.label}>
                   Where do you study / studied?*
                 </label>
                 <input
                   id="college"
-                  name="college"
-                  type="college"
-                  placeholder="College or university Name"
+                  type="text"
+                  placeholder="College or university name"
                   className={styles.input}
                   value={formData.college}
                   onChange={handleChange}
                   required
                 />
-              </div>    
+              </div>
 
               <div className={styles.fieldGroup}>
-                <label className={styles.label} htmlFor="message">
-                  Do you have any query*
+                <label htmlFor="message" className={styles.label}>
+                  Do you have any query?*
                 </label>
                 <textarea
                   id="message"
-                  name="message"
                   rows="4"
-                  placeholder="I want to knowww..."
+                  placeholder="I want to know..."
                   className={styles.textarea}
                   value={formData.message}
                   onChange={handleChange}
@@ -190,8 +229,8 @@ function Form() {
                 ></textarea>
               </div>
 
-              <button 
-                type="submit" 
+              <button
+                type="submit"
                 className={styles.submitButton}
                 disabled={formStatus.submitting}
               >
@@ -200,48 +239,6 @@ function Form() {
             </form>
           )}
         </div>
-
-        {/* Right Side - Contact Info */}
-        {/* <div className={styles.contactInfo}>
-          <div className={styles.infoBox_ctr}>
-            <div className={styles.infoBox}>
-              <p className={styles.infoTitle}>
-                <span>{email}</span> Email{" "}
-                <span className={styles.badge}>24/7</span>
-              </p>
-              <a href="mailto:connect@theentangle.com" className={styles.infoText}>
-                connect@theentangle.com
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.infoBox_ctr}>
-            <div className={styles.infoBox}>
-              <p className={styles.infoTitle}>
-                <span>{phone}</span> Phone
-              </p>
-              <a href="tel:+91-90982-73132" className={styles.infoText}>
-                +91-90982-73132
-              </a>
-            </div>
-          </div>
-
-          <div className={styles.infoBox_ctr}>
-            <div className={styles.infoBox}>
-              <p className={styles.infoTitle}>
-                <span>{location}</span> Address{" "}
-                <span className={styles.badge}>REMOTE</span>
-              </p>
-              <a href="#" className={styles.infoText}>
-                Somewhere in
-                <br />
-                Rajandra Nagar, Indore
-                <br />
-                Madhya Pradesh, India
-              </a>
-            </div>
-          </div>
-        </div> */}
       </div>
     </section>
   );
