@@ -21,7 +21,7 @@ function Landing() {
         <p className={styles.paragraph}>
           Kickstart your tech journey with hands-on learning, expert mentorship, and real-world projects. Reserve your spot now—limited seats only!
         </p>
-        <PrimaryBtn title="Fill The Form Out!" />
+        <PrimaryBtn title="Fill Out The Form Given Below!" />
       </div>
 
       <video
