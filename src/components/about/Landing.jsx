@@ -1,5 +1,5 @@
-import React from 'react'
-import styles from "../../styles/about/Landing.module.css"
+import React from "react";
+import styles from "../../styles/about/Landing.module.css";
 
 import PrimaryBtn from "../PrimaryBtn";
 
@@ -10,14 +10,16 @@ function Landing() {
     <section className={styles.landing_section}>
       <div className={styles.c1}>
         <h1 className={styles.heading}>
-        Learn More About Entangle
+          Learn More About Entangle
           <br />
           Let’s Deep Dive!
         </h1>
         <p className={styles.paragraph}>
-        catalyst for innovation and a hub for aspiring professionals, fostering growth through collaboration, knowledge-sharing, and real-world experiences.
+          catalyst for innovation and a hub for aspiring professionals,
+          fostering growth through collaboration, knowledge-sharing, and
+          real-world experiences.
         </p>
-        <PrimaryBtn title="Connect with us" />
+        <PrimaryBtn path="/contact" title="Connect with us" />
       </div>
 
       <video
@@ -28,7 +30,7 @@ function Landing() {
         muted
       ></video>
     </section>
-  )
+  );
 }
 
-export default Landing
+export default Landing;

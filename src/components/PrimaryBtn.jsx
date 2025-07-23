@@ -9,22 +9,18 @@ function PrimaryBtn(props) {
     // Check if the current path matches the target path
     if (location.pathname === props.path) {
       e.preventDefault(); // Prevent navigation
-      
+
       // Scroll down by a specified amount (you can adjust this value)
       window.scrollBy({
         top: 300, // Scroll down by 300px
-        behavior: 'smooth' // Smooth scrolling animation
+        behavior: "smooth", // Smooth scrolling animation
       });
     }
     // If paths don't match, let the Link component handle normal navigation
   };
 
   return (
-    <Link 
-      to={props.path} 
-      className={styles.cta_btn}
-      onClick={handleClick}
-    >
+    <Link to={props.path} className={styles.cta_btn} onClick={handleClick}>
       {props.title}
     </Link>
   );

@@ -23,56 +23,30 @@ function AboutEntangle() {
           <div className={styles.dot}></div>About Entangle
         </span>
         <h2 className={styles.heading}>
-          An Agency With Classic
+          An Ecosystem Empowering
           <br />
-          Revolutionary Skills!
+          Education & Innovation
         </h2>
         <div className={styles.line_break}></div>
         <ul className={styles.list}>
           <li className={styles.list_item}>
-            <h3 className={styles.list_heading}>Your Success, Our Priority</h3>
+            <h3 className={styles.list_heading}>Your Growth, Our Mission</h3>
             <p className={styles.list_paragraph}>
-              At Landin, we believe in empowering our clients to achieve their
-              goals. Our team works closely with you.
+              At The Entangle, we are dedicated to nurturing minds and bridging
+              the gap between knowledge and real-world impact. Whether you're a
+              student, professional, or institution, we collaborate closely to
+              ensure your journey is transformative.
             </p>
           </li>
           <li className={styles.list_item}>
-            <h3 className={styles.list_heading}>Partners You Can Rely On</h3>
+            <h3 className={styles.list_heading}>You Can Trust</h3>
             <p className={styles.list_paragraph}>
-              Landin is here to ensure your success with expert guidance and
-              collaborative teamwork.
+              From hands-on training and skill development to global conferences
+              and cutting-edge projects, The Entangle is your trusted partner in
+              growth, innovation, and success.
             </p>
           </li>
         </ul>
-        {/* <p className={styles.paragraph}>
-          We are committed to shaping future leaders by fostering creativity,
-          enhancing skills, and providing a platform for growth and success.
-        </p> */}
-        {/* <ul className={styles.list}>
-          <li>
-            {point}
-            <span>A roadmap to growth and success.</span>
-          </li>
-          <li>
-            {point}
-            <span>Delivering cutting-edge solutions with innovation.</span>
-          </li>
-          <li>
-            {point}
-            <span>Bringing together thought leaders and innovators.</span>
-          </li>
-          <li>
-            {point}
-            <span>Encouraging knowledge-sharing and collaboration.</span>
-          </li>
-          <li>
-            {point}
-            <span>
-              Bridging the gap between learning and real-world success.
-            </span>
-          </li>
-        </ul> */}
-        <PrimaryBtn title="View About Entangle" />
       </div>
     </section>
   );

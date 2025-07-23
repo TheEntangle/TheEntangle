@@ -4,6 +4,7 @@ import Showreel from "../components/about/Showreel";
 import AboutEntangle from "../components/about/AboutEntangle";
 import PageTransition from "../components/PageTransition";
 import ScrollToTop from "../components/ScrollToTop";
+import Teams from "../components/about/Teams";
 
 function About() {
   return (
@@ -12,6 +13,7 @@ function About() {
       <Landing />
       <Showreel />
       <AboutEntangle />
+      <Teams />
     </PageTransition>
   );
 }
