@@ -2,7 +2,7 @@
   display: flex;
   padding: 10rem 5rem;
   justify-content: space-between;
-  padding-bottom: 0;
+  /* padding-bottom: 0; */
   max-width: 1440px;
   margin: auto;
   gap: 50px;
@@ -63,7 +63,7 @@
 @media (max-width: 1450px) {
   .faq_section {
     padding: 10rem 7rem;
-    padding-bottom: 0;
+    /* padding-bottom: 0; */
   }
 }
 @media (max-width: 1200px) {

@@ -1,0 +1,142 @@
+.awards_section {
+  display: flex;
+  padding: 10rem 5rem;
+  justify-content: space-between;
+  padding-bottom: 0;
+  max-width: 1440px;
+  margin: auto;
+  background: var(--bg);
+  min-height: 60vh;
+  margin-bottom: 10rem;
+}
+.left {
+  width: 400px;
+  flex-shrink: 0;
+  /* background: red; */
+}
+.heading_ctr {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  /* max-width: 390px; */
+}
+.heading {
+  font-size: 52px;
+  line-height: 1;
+  font-weight: 400;
+}
+.heading span {
+  color: var(--white-60);
+}
+.paragraph {
+  color: var(--white-60);
+  max-width: 400px;
+}
+
+.cards_ctr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 700px;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    --border-color: var(--token-a9883d9b-c1bd-4bd9-be15-284cd72e1b1f, rgba(255, 255, 255, 0.07));
+    border: 1px solid var(--border-color);
+    /* background-color: var(--token-74f48371-76c0-476a-a319-1331b3a438c2, rgb(8, 8, 8)); */
+    background: radial-gradient(43% 50%, rgba(9, 9, 18, 0.15) 0%, rgb(9, 9, 18) 100%);
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    height: min-content;
+}
+.image_ctr{
+    width: 100%;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.certificate_image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.info_ctr{
+    display: flex;
+    flex-direction: column;
+    padding: 15px 10px;
+    gap: 5px;
+}
+.card_heading{
+    font-size: 16px;
+}
+.card_paragraph{
+    font-size: 14px;
+    color: var(--white-60);
+}
+
+@media (max-width: 1450px) {
+  .awards_section {
+    padding: 10rem 7rem;
+    padding-bottom: 0;
+  }
+}
+@media (max-width: 1330px) {
+    .cards_ctr {
+        width: 100%;
+    }
+}
+@media (max-width: 1200px) {
+  .awards_section {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .left {
+    width: 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .awards_section {
+    padding: 10rem 5rem;
+    padding-bottom: 0;
+  }
+  .heading {
+    font-size: 38px;
+  }
+}
+@media (max-width: 768px) {
+  .awards_section {
+    padding: 7rem 3rem;
+    padding-bottom: 0;
+  }
+  .cards_ctr{
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 430px) {
+  .awards_section {
+    padding: 5rem 2rem;
+    padding-bottom: 0;
+  }
+  .heading {
+    font-size: 32px;
+  }
+  .paragraph {
+    font-size: 14px;
+  }
+}
+@media (max-width: 320px) {
+  .awards_section {
+    padding: 5rem 1rem;
+    padding-bottom: 0;
+  }
+  .heading {
+    font-size: 28px;
+  }
+  .paragraph {
+    font-size: 12px;
+  }
+}

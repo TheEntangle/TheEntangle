@@ -50,12 +50,26 @@ function Teams() {
             <div className={styles.member_info_ctr}>
                 <div className={styles.member_info}>
                     <h3 className={styles.member_name}>Arin Bagul</h3>
+                    <p className={styles.member_role}>Co-Founder</p>
+                </div>
+                <div className={styles.member_socials}>
+                    {/* <a href=""><Instagram /></a> */}
+                    <a href=""><Linkedin size={22} /></a>
+                    <a href=""><Github size={22}/></a>
+                </div>
+            </div>
+          </div>
+          <div className={styles.member_card}>
+            <img src="https://framerusercontent.com/images/rHxsAzXev548yAFd2uMYmcDgvFI.jpeg?scale-down-to=2048" alt="" className={styles.member_img} />
+            <div className={styles.member_info_ctr}>
+                <div className={styles.member_info}>
+                    <h3 className={styles.member_name}>Arin Bagul</h3>
                     <p className={styles.member_role}>Founder & CEO</p>
                 </div>
                 <div className={styles.member_socials}>
-                    <a href=""><Instagram /></a>
-                    <a href=""><Linkedin /></a>
-                    <a href=""><Github /></a>
+                    {/* <a href=""><Instagram /></a> */}
+                    <a href=""><Linkedin size={22} /></a>
+                    <a href=""><Github size={22}/></a>
                 </div>
             </div>
           </div>
