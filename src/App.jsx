@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactLenis, useLenis } from 'lenis/react'
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -13,8 +14,21 @@ import Project from "./pages/Project";
 function App() {
   const location = useLocation();
 
+  useLenis(({ scroll }) => {
+    // console.log(scroll); // current scroll value
+  });
+
+
   return (
-    <>
+    <ReactLenis
+      root
+      options={{
+        lerp: 0.1,          // lower = smoother
+        duration: 1.2,      // scroll duration in seconds
+        smoothWheel: true,  // smooth mouse wheel scrolling
+        smoothTouch: false, // you can enable if you want smooth touch scroll
+      }}
+    >
       <Navbar />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
@@ -29,7 +43,7 @@ function App() {
           <Route path="/project/:id" element={<Project />} />
         </Routes>
       </AnimatePresence>
-    </>
+    </ReactLenis>
   );
 }
 

@@ -11,20 +11,19 @@ import Faq from "../components/Faq";
 import ServiceSec from "../components/home/ServiceSec";
 import Gallary from "../components/home/Gallary";
 import PageTransition from "../components/PageTransition";
+import TaazaKhabar from "../components/TaazaKhabar";
 
 function Home() {
   return (
     <PageTransition>
+      <TaazaKhabar />
       <Landing />
       <Showcase />
       <ServiceSec />
       <Portfolio />
-      
       <TheEdge />
       <Working />
-      
       {/* <Gallary /> */}
-      
       <TheEdge />
       <Faq />
       <AboutEntangle />

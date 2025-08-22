@@ -172,7 +172,6 @@
 @media (max-width: 480px) {
   .showcase_card {
     min-width: 260px;
-    height: 500px;
   }
 
   .showcase_content_ctr {

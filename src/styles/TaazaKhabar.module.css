@@ -1,0 +1,46 @@
+.animation_section {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  z-index: 10000;
+  width: 100%;
+  background-color: rgb(255, 0, 55);
+}
+.marquee_box {
+  height: 30px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+.marquee_text {
+  white-space: nowrap;
+  font-size: 16px;
+  font-weight: 200;
+  flex-shrink: 0;
+  padding: 0 10px;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+  transform: translateX(0);
+  animation: a-text-scroll 35s linear infinite;
+}
+.txtbox {
+  margin: 0 2rem;
+}
+@keyframes a-text-scroll {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+@media (max-width: 550px) {
+  .animation_section {
+    top: 4.5rem;
+  }
+  .marquee_text {
+    font-size: 14px;
+  }
+}
