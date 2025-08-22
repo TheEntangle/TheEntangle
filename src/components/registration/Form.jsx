@@ -9,10 +9,11 @@ function Form() {
   const { id } = useParams();
 
   const courseOptions = [
-    "dsa",
+    "cpp-and-dsa",
     "web-dev-foundation",
     "mern-stack",
-    "cybersecurity-event",
+    "placement-prep",
+    "english-for-professionals",
   ];
 
   const [formData, setFormData] = useState({
@@ -194,17 +195,20 @@ function Form() {
                   <option value="" className="form-option">
                     Select a course
                   </option>
-                  <option value="dsa" className="form-option">
-                    DSA with C++
+                  <option value="cpp-and-dsa" className="form-option">
+                    Code to Career: C++ and Data Structures & Algorithms
                   </option>
                   <option value="web-dev-foundation" className="form-option">
                     Web Development Foundation (HTML, CSS, JS)
                   </option>
                   <option value="mern-stack" className="form-option">
-                    MERN Stack Web Development (MongoDB, Express, React, Node)
+                    Job Bootcamp: MERN Stack Web Development (MongoDB, Express, React, Node)
                   </option>
-                  <option value="cybersecurity-event" className="form-option">
-                    Cybersecurity Event/Meet-up powered by ZenVoyager
+                  <option value="placement-prep" className="form-option">
+                    Career Kickstart Program
+                  </option>
+                  <option value="english-for-professionals" className="form-option">
+                    Elevate English Professionally
                   </option>
                 </select>
               </div>

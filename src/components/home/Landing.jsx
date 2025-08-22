@@ -22,9 +22,12 @@ function Landing() {
           <NavLink to="/contact" className={styles.primary_btn}>
             Connect with us
           </NavLink>
-          <Link to="/about" className={styles.secondary_btn}>
+          {/* <Link to="/about" className={styles.secondary_btn}>
             What is Entangle?
-          </Link>
+          </Link> */}
+          <a href="https://drive.google.com/file/d/15ohfaObv2FpBRFppzoyu7bDvHxLz1ZM7/view?usp=sharing" target="_blank" className={styles.secondary_btn}>
+            Brochure
+          </a>
         </div>
         <div className={styles.logo_ctr}>
           <div className={styles.slider}>

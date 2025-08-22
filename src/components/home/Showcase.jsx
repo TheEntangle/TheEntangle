@@ -18,18 +18,28 @@ import class_photo_12 from "../../assets/event_photos/12.jpg"
 
 
 function Showcase() {
-  const photos = [
-    class_photo_9,
-    class_photo_10,
-    class_photo_11,
-    class_photo_12,
-    class_photo_1,
-    class_photo_2,
-    class_photo_3,
-    // class_photo_4,
-    class_photo_5,
-    // class_photo_6,
-    // class_photo_8,
+
+  const showcase = [
+    {
+      img: class_photo_9,
+      heading: "Day 1: MERN Stack Internship Program",
+    },
+    {
+      img: class_photo_10,
+      heading: "Day 2: MERN Stack Internship Program",
+    },
+    {
+      img: class_photo_11,
+      heading: "Career Oriented Session",
+    },
+    {
+      img: class_photo_12,
+      heading: "Building Live Project",
+    },
+    {
+      img: class_photo_1,
+      heading: "Mentoring a Hackathon at SAGE",
+    }
   ]
 
   
@@ -68,13 +78,13 @@ function Showcase() {
       </div>
       <div className={styles.showcase_slides_ctr}>
 
-        {photos.map((photo, index) => (
+        {showcase.map((data, index) => (
 
           <div className={styles.showcase_card}>
           <div className={styles.showcase_img_ctr}>
             <img
               className={styles.showcase_img}
-              src={photo}
+              src={data.img}
               alt=""
             />
             <div className={styles.dark}></div>
@@ -85,17 +95,15 @@ function Showcase() {
                 className={styles.logo}
               /> */}
               <span className={styles.showcase_heading}>
-                TAVISHI 1.0
+                {data.heading}
               </span>
-              <p className={styles.showcase_paragraph}>
-                A successful event at SAGE University, Indore, where we engaged
-                students with our innovative approach to education and
-                entrepreneurship.
+              {/* <p className={styles.showcase_paragraph}>
+                .
               </p>
               <div className={styles.jelly_tag_ctr}>
                 <span className={styles.jelly_tag}>TechEvent</span>
                 <span className={styles.jelly_tag}>Hackathon</span>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
