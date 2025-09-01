@@ -19,8 +19,8 @@ function About() {
       <Showreel />
       <AboutEntangle />
       <Teams />
-      <TheEdge />
-      <Awards />
+      {/* <TheEdge /> */}
+      {/* <Awards /> */}
       <ServiceSec />
       <Faq />
       <Footer />

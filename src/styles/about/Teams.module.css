@@ -92,6 +92,9 @@
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--white-07);
+  object-fit: cover;
+  object-position: -70px;
+  filter: grayscale(1);
 }
 .member_info_ctr {
   position: absolute;

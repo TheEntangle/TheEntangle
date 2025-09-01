@@ -6,6 +6,9 @@ import element_details from "../../assets/element_1.svg";
 
 import { Instagram, Linkedin, Github } from 'lucide-react';
 
+import arinbagul from "../../assets/team/arinbagul-entangle-Photoroom.webp"
+import baljeetsingh from "../../assets/team/baljeetsingh-entangle-Photoroom.webp"
+
 function Teams() {
   return (
     <section className={styles.team_section}>
@@ -46,30 +49,30 @@ function Teams() {
         <div className={styles.team_members}>
           {/* Team member cards would go here */}
           <div className={styles.member_card}>
-            <img src="https://framerusercontent.com/images/rHxsAzXev548yAFd2uMYmcDgvFI.jpeg?scale-down-to=2048" alt="" className={styles.member_img} />
+            <img src={baljeetsingh} alt="Baljeet Singh" className={styles.member_img} />
             <div className={styles.member_info_ctr}>
                 <div className={styles.member_info}>
-                    <h3 className={styles.member_name}>Arin Bagul</h3>
-                    <p className={styles.member_role}>Co-Founder</p>
+                    <h3 className={styles.member_name}>Baljeet Singh</h3>
+                    <p className={styles.member_role}>Founder & Chairman</p>
                 </div>
-                <div className={styles.member_socials}>
+                {/* <div className={styles.member_socials}> */}
                     {/* <a href=""><Instagram /></a> */}
-                    <a href=""><Linkedin size={22} /></a>
+                    {/* <a href=""><Linkedin size={22} /></a>
                     <a href=""><Github size={22}/></a>
-                </div>
+                </div> */}
             </div>
           </div>
           <div className={styles.member_card}>
-            <img src="https://framerusercontent.com/images/rHxsAzXev548yAFd2uMYmcDgvFI.jpeg?scale-down-to=2048" alt="" className={styles.member_img} />
+            <img src={arinbagul} alt="Arin Bagul" className={styles.member_img} />
             <div className={styles.member_info_ctr}>
                 <div className={styles.member_info}>
                     <h3 className={styles.member_name}>Arin Bagul</h3>
-                    <p className={styles.member_role}>Founder & CEO</p>
+                    <p className={styles.member_role}>Co-Founder | Trainer</p>
                 </div>
                 <div className={styles.member_socials}>
                     {/* <a href=""><Instagram /></a> */}
-                    <a href=""><Linkedin size={22} /></a>
-                    <a href=""><Github size={22}/></a>
+                    <a href="https://www.linkedin.com/in/arin-bagul/" target="_blank"><Linkedin size={22} /></a>
+                    <a href="https://github.com/ArinBagul" target="_blank"><Github size={22}/></a>
                 </div>
             </div>
           </div>
