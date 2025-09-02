@@ -4,6 +4,9 @@ import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
 
+import ganeshji_day1 from "../../assets/event_photos/ganeshji_day1.jpg"
+import mern_workshop_day1 from "../../assets/event_photos/mern_workshop_day1.jpg"
+import mern_workshop_day2 from "../../assets/event_photos/mern_workshop_day2.jpg"
 import class_photo_1 from "../../assets/event_photos/1.jpg"
 import class_photo_2 from "../../assets/event_photos/2.jpg"
 import class_photo_3 from "../../assets/event_photos/3.jpg"
@@ -20,6 +23,18 @@ import class_photo_12 from "../../assets/event_photos/12.jpg"
 function Showcase() {
 
   const showcase = [
+    {
+      img:ganeshji_day1,
+      heading: "Ganesha Poojan"
+    },
+    {
+      img:mern_workshop_day1,
+      heading: "Day 1: MERN Stack Workshop"
+    },
+    {
+      img:mern_workshop_day2,
+      heading: "Day 2: MERN Stack Workshop"
+    },
     {
       img: class_photo_9,
       heading: "Day 1: MERN Stack Internship Program",

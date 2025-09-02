@@ -92,9 +92,12 @@
   object-fit: cover;
   border-radius: 14px;
   border: 1px solid var(--white-07);
-  object-fit: cover;
   object-position: -70px;
   filter: grayscale(1);
+  transition: filter 0.5s ease-in-out;
+}
+.member_img:hover{
+  filter: grayscale(0);
 }
 .member_info_ctr {
   position: absolute;

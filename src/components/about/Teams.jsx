@@ -4,10 +4,11 @@ import JellyTag from "../JellyTag";
 import PrimaryBtn from "../PrimaryBtn";
 import element_details from "../../assets/element_1.svg";
 
-import { Instagram, Linkedin, Github } from 'lucide-react';
+import { Instagram, Linkedin, Github, Mail } from 'lucide-react';
 
 import arinbagul from "../../assets/team/arinbagul-entangle-Photoroom.webp"
 import baljeetsingh from "../../assets/team/baljeetsingh-entangle-Photoroom.webp"
+import anuj from "../../assets/team/anuj-entangle-Photoroom.webp"
 
 function Teams() {
   return (
@@ -73,6 +74,20 @@ function Teams() {
                     {/* <a href=""><Instagram /></a> */}
                     <a href="https://www.linkedin.com/in/arin-bagul/" target="_blank"><Linkedin size={22} /></a>
                     <a href="https://github.com/ArinBagul" target="_blank"><Github size={22}/></a>
+                </div>
+            </div>
+          </div>
+          <div className={styles.member_card}>
+            <img src={anuj} alt="Anuj Rawat" className={styles.member_img} />
+            <div className={styles.member_info_ctr}>
+                <div className={styles.member_info}>
+                    <h3 className={styles.member_name}>Anuj Rawat</h3>
+                    <p className={styles.member_role}>Co-Founder | Trainer</p>
+                </div>
+                <div className={styles.member_socials}>
+                    {/* <a href=""><Instagram /></a> */}
+                    <a href="https://www.linkedin.com/in/anuj-rawat-204b91204/" target="_blank"><Linkedin size={22} /></a>
+                    <a href="mailto:anujrawat@zenvoyager.in" target="_blank"><Mail size={22}/></a>
                 </div>
             </div>
           </div>
