@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
 
+import mern_online_bootcamp from "../assets/courses/mern_online_bootcamp.webp"
+import cs_online_bootcamp from "../assets/courses/cs_online_bootcamp.webp"
 import post_1 from "../assets/courses/web_foundation.webp";
 import post_2 from "../assets/courses/mern_stack.webp";
 import post_3 from "../assets/courses/cpp_and_dsa.webp";
@@ -15,6 +17,36 @@ export function EmblaCarousel() {
   return (
     <div className="embla" ref={emblaRef}>
       <div className="embla__container">
+        <a
+          href="https://forms.gle/ASnUGdXP8G5Wgss27"
+          target="_blank"
+          className="embla__slide"
+        >
+          <img className="embla__slide__img" src={mern_online_bootcamp} alt="Course Ad 1" />{" "}
+          <a
+            href="https://forms.gle/ASnUGdXP8G5Wgss27"
+            target="_blank"
+            className="reg-btn"
+          >
+            Register Now
+          </a>
+        </a>
+
+        <a
+          href="https://forms.gle/SnFLbJYoLENBvGdC7"
+          target="_blank"
+          className="embla__slide"
+        >
+          <img className="embla__slide__img" src={cs_online_bootcamp} alt="Course Ad 1" />{" "}
+          <a
+            href="https://forms.gle/SnFLbJYoLENBvGdC7"
+            target="_blank"
+            className="reg-btn"
+          >
+            Register Now
+          </a>
+        </a>
+
         <Link
           to="/course/registration/web-dev-foundation"
           className="embla__slide"

@@ -56,11 +56,13 @@ function Teams() {
                     <h3 className={styles.member_name}>Baljeet Singh</h3>
                     <p className={styles.member_role}>Founder & Chairman</p>
                 </div>
-                {/* <div className={styles.member_socials}> */}
-                    {/* <a href=""><Instagram /></a> */}
-                    {/* <a href=""><Linkedin size={22} /></a>
+                <div className={styles.member_socials}>
+                  <a href="mailto:baljeetsingh@theentangle.com" target="_blank"><Mail size={22}/></a>
+                    {/* <a href=""><Instagram /></a>
+                    <a href=""><Linkedin size={22} /></a>
                     <a href=""><Github size={22}/></a>
-                </div> */}
+                    <a href=""><Github size={22}/></a> */}
+                </div>
             </div>
           </div>
           <div className={styles.member_card}>
