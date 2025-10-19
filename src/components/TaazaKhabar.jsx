@@ -7,7 +7,7 @@ function TaazaKhabar() {
       <div class={styles.marquee_box}>
         <h2 class={styles.marquee_text}>
           <span className={styles.txtbox}>
-            Our new batches are starting form September 1st
+            Our new batches for C/C++ and DSA are starting from 3rd November
           </span>{" "}
           <span className={styles.txtbox}>|</span>
           <span className={styles.txtbox}>Limited seats only</span>{" "}
@@ -15,7 +15,7 @@ function TaazaKhabar() {
         </h2>
         <h2 class={styles.marquee_text}>
           <span className={styles.txtbox}>
-            Our new batches are starting form September 1st
+            Our new batches for C/C++ and DSA are starting from 3rd November
           </span>{" "}
           <span className={styles.txtbox}>|</span>
           <span className={styles.txtbox}>Limited seats only</span>{" "}

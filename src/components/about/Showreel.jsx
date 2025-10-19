@@ -11,6 +11,8 @@ function Showreel() {
           src={showreel}
           controls
           muted
+          autoPlay
+          loop
         ></video>
       </div>
     </section>
