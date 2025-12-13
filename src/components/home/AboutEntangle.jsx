@@ -3,6 +3,7 @@ import styles from "../../styles/home/AboutEntangle.module.css";
 import { point } from "../../assets/icons";
 
 import PrimaryBtn from "../PrimaryBtn";
+import baljeet_sir from "../../assets/baljeet_sir.webp";
 
 function AboutEntangle() {
   return (
@@ -11,7 +12,7 @@ function AboutEntangle() {
         <div className={styles.img_ctr}>
           <img
             className={styles.image}
-            src="https://media.istockphoto.com/id/1363276509/photo/teacher-giving-computer-science-lecture-to-diverse-multiethnic-group-of-female-and-male.jpg?s=612x612&w=0&k=20&c=iHDI7pI98XJfh95nFw-wT9L9jYr0IzSBYB53riWOVsk="
+            src={baljeet_sir}
             alt=""
           />
           <div className={styles.blur}></div>

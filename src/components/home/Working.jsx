@@ -4,6 +4,7 @@ import JellyTag from "../JellyTag.jsx";
 import card_bg from "../../assets/card_bg_.avif";
 import { shine } from "../../assets/icons";
 import { rocket } from "../../assets/rocket_icon.jsx";
+import lecture_delivery from "../../assets/lecture_delivery.webp";
 
 function Working() {
   return (
@@ -46,7 +47,7 @@ function Working() {
             {/* {shine} */}
             <img
               className={styles.hero_image}
-              src="https://images.stockcake.com/public/4/2/4/424e0a68-d17f-4582-be6c-0878436bada6_large/team-brainstorming-session-stockcake.jpg"
+              src={lecture_delivery}
               alt="brainstorming session"
             />
             <div className={styles.blur}></div>
